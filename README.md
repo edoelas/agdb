@@ -15,3 +15,4 @@
 - About flash games
 - Doing things properly in python
 - Why I have chosen the tools I have chosen
+- Scala vs Python vs Haskell vs Java vs C++
