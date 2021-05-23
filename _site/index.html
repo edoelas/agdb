@@ -24,8 +24,9 @@
     </header>
     <section>
       <div class="content">
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="WIP">
   <div class="related">
-    <ul style="padding-left: 0;">
+    <ul id="myUL" style="padding-left: 0;">
       
       <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
         <a href="/agdb//2021/05/23/Blog-presentation.html">
@@ -47,6 +48,24 @@
     Email: <a href="mailto:miego.cvcv@gmail.com"> miego.cvcv@gmail.com</a>.
   </div>
 </div>
+
+<script>
+  function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          txtValue = li[i].textContent || li[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+</script>
     </section>
     <br>
   </body>
