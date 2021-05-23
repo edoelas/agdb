@@ -1,9 +1,5 @@
 auto: true
 
 highlighter: rouge
-collections:
-  documents:
-    output: true
-    permalink: /document/:name
 
-baseurl: /tfgblog/
+baseurl: /agdb/

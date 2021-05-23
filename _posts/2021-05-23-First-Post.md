@@ -2,9 +2,7 @@
 layout: post
 title: First Post
 tags: just-chatting
-typora-root-url: ../..
 ---
-
 
 
 ![alt text](/assets/images/2021-05-23-Blog-presentation/nostalgictree_art.jpg "test")
