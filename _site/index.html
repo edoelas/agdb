@@ -24,7 +24,7 @@
     </header>
     <section>
       <div class="content">
-  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="WIP">
+  <input type="text" id="myInput" onkeyup="search()" placeholder="Search...">
   <div class="related">
     <ul id="myUL" style="padding-left: 0;">
       
@@ -50,18 +50,25 @@
 </div>
 
 <script>
-  function myFunction() {
-      var input, filter, ul, li, a, i, txtValue;
+  // Esto se puede mejorar bastante para permitir incluir:
+  // - espacios con comillas: "ejemplo ejemplo"
+  // - wildcards: ejem_o eje*o
+  // - busquedas por atributo: date:23
+  function search() {
+      var input, filters, ul, li, a, i, txtValue, searchs;
       input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
+      filters = input.value.toUpperCase().split(" ");
       ul = document.getElementById("myUL");
       li = ul.getElementsByTagName("li");
       for (i = 0; i < li.length; i++) {
           txtValue = li[i].textContent || li[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "";
-          } else {
+          searchs = filters.map(function(x) {
+            return txtValue.toUpperCase().indexOf(x);
+          })
+          if ( searchs.includes(-1)) {
               li[i].style.display = "none";
+          } else {
+              li[i].style.display = "";
           }
       }
   }
