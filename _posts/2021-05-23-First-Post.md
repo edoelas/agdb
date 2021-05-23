@@ -5,7 +5,7 @@ tags: just-chatting
 ---
 
 
-![alt text]({{site.baseurl}}/assets/images/{{post.url}}/nostalgictree_art.jpg "test")
+![alt text]({{post.url}}/nostalgictree_art.jpg "test")
 
 
 ```python

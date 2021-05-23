@@ -1,3 +1,9 @@
 auto: true
 highlighter: rouge
 baseurl: /agdb/
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
