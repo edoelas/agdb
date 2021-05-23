@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link href="/agdb//assets/css/BMFW.css" rel="stylesheet">
+    <link href="/agdb//assets/css/vs.css" rel="stylesheet">
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+        }
+      });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Your Name" />
+    <title>About game engines</title> 
+  </head>
+  <body>
+    <header>
+      <h1>About game engines</h1>
+    </header>
+    <section>
+      <a href="/agdb/">Home</a>
+<div class="content">
+  <div id="post">
+    <h1></h1>
+    <p>Second blog post, and in the same day. You can call me a workaholic. The truth is that I just wanted to write something more related to game development during the first day. There is a lot of things that I have already learned that I will be publishig during the next days. Today we are talking about game engines. The title is a bit missleading sice I will not talk just about game engines, I will also talk about frameworks and other tools so we could rewrite the title as: “About things that we use to do games”. But it was not that catchy.</p>
+
+<p>When we decide to develop a game the first important decision is what do we want to develop. And it is not until we have taken that decision (or at least, we have a slightly idea of the answer) that we can move to the next big question: “Which tools should I use?”. Most of the time we are refering to the <a href="https://en.wikipedia.org/wiki/Game_engine">game engine</a>. And that is a quite difficult question. First of all I am going to say that I am not a game engine expert, in fact, as I said in the first post, I barely know anything about game development. But now I am going to say a couple of things that I think that can be helpful for beginers.</p>
+
+<ol>
+  <li>
+    <p><strong>Avoid searching on google “Which is the best game engine?” or similar questions</strong>. Most of the results of that search will be pages that rank game engines based on doubtful criteria. I am not going to talk about why probably those rankings are crap but I will say this: taking your decision based on those rankings makes no sense.</p>
+
+    <p>Each game has differents requirements. If you are going to do a 2D roguelike why would you pick the fastest 3D rendering game engine? Or if you want to make a simple puzzle game, why would you choose the game engine with the best physics engine? I think that there is not need to further develop this point. My suggestion is to make a list with the requirements of your games, with at least two sections: mandatory features and nice to have ones.</p>
+  </li>
+  <li>
+    <p><strong>Game development frameworks also exist</strong>. I feel that most of the people interested in game design come from two groups: people interested in art and people interested in computers. If you are an artist with no experience with programming, I would suggest you to pick a game engine, but if you are a computer engineer,  you probably want to have a look at some of them. To me, the main advantages of the frameworks are that I feel that I have more freedom and the chance to automate everything. No more clicking buttons and selecting dropdowns.</p>
+
+    <p>That being said, frameworks usually are better suited for some kinds of games over others. If you want to do a 3D shooter game, probably a game engine with a nice level editor and a good physics engine will be better. I also have the feeling that game engines tend to give you pre-made solutions while game frameworks leave these problems to the user. For example, all the big game engines give you some kind of <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, but frameworks like <a href="https://libgdx.com/">libGDX</a> or <a href="https://www.raylib.com/index.html">raylib</a> do not include it. Game frameworks are more barebones.</p>
+  </li>
+  <li>
+    <p><strong>Community, documentation and, libraries (and programming language)</strong>. This is what I always say that is the most important in a linux distro. I use <a href="https://archlinux.org/">arch</a> btw. And it is not because it is the best distro but because it has a ton of high quality documentation (the <a href="https://wiki.archlinux.org/">arch wiki</a>), huge software repository with fast updates (<a href="https://aur.archlinux.org/">AUR</a>) and a really helpful comunity (<a href="https://bbs.archlinux.org/">arch forum</a>, although sometimes a bit… intimidating). Maybe I would prefer an operating system that does not break every time it gets an update (just kidding) but for me the community, repos and documentation are more valuable that any other feature that an OS can offer me. I will take the same approach to game engines. If you are an expert you should not care that much about this points (and probably you are not reading this) but for a begginer, like me, they are really important.</p>
+
+    <p>In the case of game engines/frameworks the programming language is fundamental. I would suggest you <strong>not</strong> to pick the engine based on the languages that you know but the other way around, pick the language based on the engine that you are going to use. Lots of frameworks allow you to use multiple programing languages. Raylib for example has bindings for a ton of programming languages and libGDX can be used with most of the languages that run under the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">Java Virtual Machine</a>. Game engines usually are more restrictive but for example <a href="https://godotengine.org/">Godot</a> allows you to use GDScript, Visual Scripting, C# and, C++. One of the most popular game engines for indie games, Unity, allows you to use C++ and C# and there are <a href="https://www.reddit.com/r/golang/comments/kqg7pl/unitygolang_using_golang_as_a_scripting_engine/">workaround</a> to use other languages, but I would suggest against them because usually the communities aroud these approaches are non existent.</p>
+  </li>
+  <li>
+    <p><strong>You do not need such a powerful game engine</strong>.If you are a <a href="https://en.wikipedia.org/wiki/AAA_(video_game_industry)">AAA</a> or are planning to start a revolution in real-time 3D graphics forget about this point. If you are an indie developer I think it makes a lot of sense. Belive me, I have been ther, I have been obsesed with using the fastest tools and it was a big mistake that was just slowing me down. If you do not believe me make a list of all the indie games that are not 2d or low poly and use high resolution textures and models. I think you will have a hard time. And there is a reason for that: these kind of assets are really expensive (in terms of time and money), so it is not suitable for indie games where the budget is a big constraint. I am not saying that you should not pay attention to how fast is a game engine when picking one, I am just saying that please do not become obsed like I did with efficiency. Computers nowadays are incredibly powerful and these kind of super fast tools are harder to master. Try to do anything with C and OpenGL and you will understand why.</p>
+  </li>
+</ol>
+
+<p>With this post I was not trying to cover all the important points when picking a game engine but just some that I have seen overlooked on the internet. I hope that this has been useful or at least interesting. Now I am going to leave some resources that came to my mind while writing this.</p>
+
+<ul>
+  <li>
+    <p><strong><a href="https://www.youtube.com/user/gamefromscratch">Gamefromscratch</a> YouTube channel</strong>. Mostly reviews of tools and resources for game development.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://www.youtube.com/user/TheChernoProject">The Cherno</a> YouTube channel</strong>. A madlad that is creating his own game engine. Advanced but really interesting. Also incredibly long.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://learnopengl.com/">Learn OpenGL</a> website</strong>. A really nice OpenGL guide for advanced begginers.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://www.youtube.com/watch?v=m48xthwkpI0">Why is every indie game made with Pixel Art?</a> video from <a href="https://www.youtube.com/channel/">Out of Sight</a></strong>. A really interesting video about why pixel art is so popular in indie games.</p>
+  </li>
+  <li>
+    <p><strong><a href="https://www.youtube.com/watch?v=tInaI3pU19Y">Unity DOTS vs Handbuilt: Sample Project</a> video from <a href="https://www.youtube.com/channel/UCWm66r5LauAXin-Asjgo8YQ">Nick Caston</a></strong>. Video comparing how efficient is Unity compared to C++ and OpenGL.</p>
+  </li>
+</ul>
+
+  </div>
+</div>
+<a href="/agdb/">Home</a>
+<!-- TODO desactivar los botones de Home cuando imprimir -->
+    </section>
+    <br>
+  </body>
+  
+</html>

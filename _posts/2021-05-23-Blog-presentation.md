@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog presentation
-tags: just-chatting
+tags: presentation meta
 ---
 
 Hi, how are you doing? I am fine, thanks. Either I have sent you personally the link to this blog, or I have no idea why you are here. Anyway, in this post, my plan is to explain why I am making this blog, so, without further ado...
@@ -12,9 +12,9 @@ So that was 'why' I am using this blog. Now let's talk about the blog itself. I 
 
 If we talk about the design, it is around 60 lines of CSS (including the syntax highlighting) and the most basic HTML you can imagine. Maybe (probably not) you ask yourself: "Why the home button is under the title of the post?". It is because this allows me to delete four lines of HTML. It just has two kinds of pages: the home page and the posts. My contact information (e-mail) is at the bottom of the home page, no need for a separate page for that.
 
-That was a bit of a rant, but it is also a statement. That's what I think about software development: [KISS](https://en.wikipedia.org/wiki/KISS_principle). Now let's talk about how I am going to use it. My plan is to write something every day, even if it is five lines. That way, I force myself to invest a bit of time in the development of the project every day. Sometimes it will be things like what I have learned, what I have discovered, what I like or dislike about it etc. Be prepared to hear me complaining about things that probably I did not fully understand. But there will also be posts about how to solve this problem,  a different approach to do the same thing,  recommending resources, and, of course, showing the outcome of my effort. It will not be well organized, that is why I decided to go with a tag system: it is simple and allows me to have some organization in the lack of it. Maybe I improve the search bar to allow for wildcards and specific attribute search, but that is the most I can do about organization.
+That was a bit of a rant, but it is also a statement. That's what I think about software development: [KISS](https://en.wikipedia.org/wiki/KISS_principle). Now let's talk about how I am going to use it. My plan is to write something every day, even if it is five lines. That way, I force myself to invest a bit of time in the development of the project every day. Sometimes it will be things like what I have learned, what I have discovered, what I like or dislike about it etc. Be prepared to hear me complaining about things that probably I did not fully understand. But there will also be posts about how to solve that problem, a different approach to do the same thing,  recommending resources, and, of course, showing the outcome of my effort. It will not be well organized, that is why I decided to go with a tag system: it is simple and allows me to have some organization while not having at all. Maybe I improve the search bar to allow for wildcards and specific attribute search, but that is the most I can do about organization.
 
 I think that was enough for a first post, a lot of text. I will finish by sharing with you an artist whose pixel art I like due to 
-the way she works with the shapes, most of the time making them pixel-perfect even in weird angles. Her name is [nostalgictree](https://www.instagram.com/nostalgictree/)
+the way she works with the shapes, most of the time making them pixel-perfect even in weird angles. Her name is [nostalgictree](https://www.instagram.com/nostalgictree/).
 
 ![alt text]({{ site.baseurl }}/assets/img/{{ page.path | replace: ".md","" | split: "/" | slice: -1 | }}/nostalgictree_art.jpg)
