@@ -5,7 +5,7 @@ tags: just-chatting
 ---
 
 
-![alt text](/agdb/assets/images/2021-05-23-Blog-presentation/nostalgictree_art.jpg "test")
+![alt text]({{site.baseurl}}/assets/images/{{post.url}}/nostalgictree_art.jpg "test")
 
 
 ```python
