@@ -5,7 +5,7 @@ tags: just-chatting
 ---
 
 
-![alt text](/agdb/assets/images/2021-05-23-Blog-presentation/nostalgictree_art.jpg "test")
+![alt text](/agdb/assets/images/2021-05-23-Blog-presentation/nostalgictree_art.jpg "test"){:.img}
 
 
 This blog will be used to document my Bachelor's Thesis and this is the first post. At the top of the home page there are some important documents related to the development of the game (GDD, AI ideas, structure of the project etc.)
@@ -43,4 +43,9 @@ There are still some design decisions that have to be made about how the client 
 - Should I just use python sockets or maybe something like [rabbitmq](https://www.rabbitmq.com/) ?
 - Which data should I send and receive?
 
-This decisions are supposed to be taken tomorrow, even I am quite sure that it does not matter what I decide it will change in the future. 
+This decisions are supposed to be taken tomorrow, even I am quite sure that it does not matter what I decide it will change in the future.
+
+```python
+s = "Python syntax highlighting"
+print s
+```
