@@ -1,9 +1,14 @@
 ---
 layout: post
 title: First Post
-tags: just chatting
+tags: just-chatting
 typora-root-url: ../..
 ---
+
+
+
+![alt text](/assets/images/2021-05-23-Blog-presentation/nostalgictree_art.jpg "test")
+
 
 This blog will be used to document my Bachelor's Thesis and this is the first post. At the top of the home page there are some important documents related to the development of the game (GDD, AI ideas, structure of the project etc.)
 
