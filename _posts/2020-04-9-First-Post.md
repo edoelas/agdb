@@ -1,6 +1,7 @@
 ---
 layout: post
 title: First Post
+tags: just chatting
 typora-root-url: ../..
 ---
 
