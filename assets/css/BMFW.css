@@ -26,3 +26,7 @@ img {
   margin-right: auto;
   width: 100%;
 }
+
+@media print {
+  .dontprint{ display: none; }
+}
