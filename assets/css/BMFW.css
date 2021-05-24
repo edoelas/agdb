@@ -35,7 +35,7 @@ img {
   .dontprint{ display: none; }
 }
 
-@media all and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   body{
     background-color: rgb(255, 215, 215);
   }
