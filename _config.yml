@@ -3,3 +3,4 @@ plugins:
 auto: true
 highlighter: rouge
 baseurl: /agdb/
+title: Another Game Development Blog
