@@ -15,7 +15,7 @@ title: Another Game Development Blog
     {% for post in site.posts %}
     <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
       <h4 style="display: inline;"><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-      <h5 class="date">{{ post.date | date: "%e %B %Y" }}</h5><br>
+      <h5 style="float: right;">{{ post.date | date: "%e %B %Y" }}</h5><br>
       <h6>{% for tag in post.tags %}{{tag}}, {% endfor %}</h6>
     </li>
     {% endfor %}
