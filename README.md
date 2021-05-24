@@ -2,13 +2,11 @@
 
 ## TODO
 
-- [ ] Add RSS
 - [ ] Improve search
 - [ ] Adapt design for smartphones
 - [ ] Deactivate useless links when printing
 - [ ] Solve hassle with image insertion
 - [ ] Add google analytics
-- [ ] Check HTML code
 
 ## Next posts
 

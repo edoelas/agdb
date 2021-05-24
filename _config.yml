@@ -2,5 +2,5 @@ plugins:
   - jekyll-feed
 auto: true
 highlighter: rouge
-baseurl: /agdb
+baseurl: /agdb/
 title: Another game development blog

@@ -5,31 +5,22 @@ title: Another Game Development Blog
 <br>
 <div class="content">
   <input style="height: 1.6em;" type="text" id="myInput" onkeyup="search()" placeholder="Search...">
-  <!-- TODO Revisar el HTML y quitar divs innecesarios -->
-  <div class="related">
-    <ul id="myUL" style="padding-left: 0;">
+    
+  <ul id="myUL" style="padding-left: 0;">
       {% for post in site.posts %}
       <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{post.title}}
-        </a>
-        <span style="float:right;">{{ post.date | date: "%e %B %Y" }}</span>
-        <br>
-        <span style="color:#888;">
-          {% for tag in post.tags %}
-            {{tag}},
-          {% endfor %}
-        </span>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+        <span style="float:right;">{{ post.date | date: "%e %B %Y" }}</span><br>
+        <span style="color:#888;">{% for tag in post.tags %}{{tag}},{% endfor %}</span>
       </li>
       {% endfor %}
     </ul>
-  <br>
+    <br>
+
     <h2>Contact information</h2>
     Author: Miguel Edo<br>
     Email: <a href="mailto:miego.cvcv@gmail.com"> miego.cvcv@gmail.com</a>.<br>
     <a class="btn btn-rss" href="{{ site.baseurl }}/feed.xml" target="_blank">RSS</a>
-
-  </div>
 </div>
 
 <script>
