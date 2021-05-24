@@ -27,6 +27,20 @@ img {
   width: 100%;
 }
 
+.date{
+  float:right;
+}
+
 @media print {
   .dontprint{ display: none; }
+}
+
+@media all and (max-width: 640px) {
+  body{
+    background-color: rgb(255, 215, 215);
+  }
+
+  .date{
+    float: none;
+  }
 }
