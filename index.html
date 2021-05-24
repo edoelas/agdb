@@ -4,22 +4,26 @@ title: Another Game Development Blog
 ---
 <br>
 <div class="content">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
   <input style="height: 1.6em;" type="text" id="myInput" onkeyup="search()" placeholder="Search...">
     
   <ul id="myUL" style="padding-left: 0;">
-      {% for post in site.posts %}
-      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-        <span class="date">{{ post.date | date: "%e %B %Y" }}</span><br>
-        <span style="color:#888;">{% for tag in post.tags %}{{tag}},{% endfor %}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    <br>
+    {% for post in site.posts %}
+    <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
+      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+      <span class="date">{{ post.date | date: "%e %B %Y" }}</span><br>
+      <span style="color:#888;">{% for tag in post.tags %}{{tag}},{% endfor %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <br>
 
-    <h2>Contact information</h2>
-    Author: Miguel Edo<br>
-    Email: <a href="mailto:miego.cvcv@gmail.com"> miego.cvcv@gmail.com</a>.<br>
+  <h2>Contact information</h2>
+  Author: Miguel Edo<br>
+  Email: <a href="mailto:miego.cvcv@gmail.com"> miego.cvcv@gmail.com</a>.<br>
 </div>
 
 <script>

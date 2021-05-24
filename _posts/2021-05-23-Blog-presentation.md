@@ -4,6 +4,8 @@ title: Blog presentation
 tags: presentation meta
 ---
 
+{% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
+
 Hi, how are you doing? I am fine, thanks. Either I have sent you personally the link to this blog, or I have no idea why you are here. Anyway, in this post, my plan is to explain why I am making this blog, so, without further ado...
 
 I already had a similar blog. I find it useful: it is a good way to record all my progress and mistakes. Usually, there are more mistakes than progress, but it is really important to remember the embarrassing mistakes to avoid repeating them. It could also be useful for somebody that wants to discover how is developing an indie game by somebody who just finished his degree and has zero experience in game development. We are going to learn a lot together. I also would like to improve my English writing, and this could be a good way to do it. The reason why I am making another blog instead of using the old one is that there were some things that I did not like about the old one: it was too tedious to publish a new post, the design could be better and, the structure was too complex. We could think about this blog as a v2 of the old one.
@@ -17,4 +19,5 @@ That was a bit of a rant, but it is also a statement. That's what I think about 
 I think that was enough for a first post, a lot of text. I will finish by sharing with you an artist whose pixel art I like due to 
 the way she works with the shapes, most of the time making them pixel-perfect even in weird angles. Her name is [nostalgictree](https://www.instagram.com/nostalgictree/).
 
-![alt text]({{ site.baseurl }}/assets/img/{{ page.path | replace: ".md","" | split: "/" | slice: -1 | }}/nostalgictree_art.jpg)
+
+![Pixel art by nostalgictree]({{ media }}/nostalgictree_art.jpg)

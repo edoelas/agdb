@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 
 <html>
-
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-91WYMZK8X7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,11 +10,12 @@
       gtag('js', new Date());
       gtag('config', 'G-91WYMZK8X7');
     </script>
-
+    <!-- CSS and highlighter -->
     <link href="{{ site.baseurl }}/assets/css/BMFW.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/vs.css" rel="stylesheet">
+    <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/feed.xml">
-
+    <!-- latex -->
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
@@ -23,20 +23,15 @@
           processEscapes: true
         }
       });
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="edoelas" />
     <title>{{ page.title }}</title> 
   </head>
-  
+
   <body>
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-    <section>
       {{ content }}
-    </section>
   </body>
-  
 </html>
