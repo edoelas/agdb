@@ -6,15 +6,18 @@ tags: ~WIP~ Presentation meta design blog
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
-I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was using just 60 lines of CSS in total. And what have I become? Now I use 70 lines of CSS just for syntax highlighting and another 120 for the rest of the things. How many lines I will be using tomorrow? 10.000? 100.000? Nobody knows. I have becomed what I promissed to destroy. I wanted to destroy the bloat and now I am the bloat. I have become a monster.
+![How did the blog look befor the redesign.]({{media}}/old_blog.png)
+*How did the blog look befor the redesign.*
+
+I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was using just 60 lines of CSS in total. What have I become? Now I use  around 200 lines of CSS. How many lines I will be using tomorrow? 1.000? 10.000? Nobody knows. I have became what I promissed to destroy. The bloat. I am a monster.
 
 Okay, enough stupidity for today, now I am going to talk about what happened. As I said I am not a web designer but as any human I like beautiful things. So what happend? I just woke up one morning and decided to spend my whole day fiddling with CSS? No, first I needed to open my eyes. Two days ago, 23 May 2021, the day of the creation of this blog, at 22:08 I send the blog link to one of my friends and he replies:
 
-> "It is as ugly as hitting a father."<br>- A. K.
+> "It is as bad as beating a father."<br>- A. K.
 
-It was not imediate but that comment is what started the redesign. The truth is that the default colours and fonts are not the best ones. Maybe by changing that I could make the blog a bit more appealing.
+My response was not imediate but that comment fuelled the redesign. The harsh truth is that the default browser colours and fonts are not the best ones.
 
-When I did my first blog I loved its home page but two days ago, when I changed the layout of it, I discovered that my old home page was garbage. Twodays ago I thought that the design of my blog was almost perfect. Now I think it was garbage. As we say here: "he who does not know god will pray to any saint." And that is exactly what happened. My question now is: in a year or so, will I find that this blog is garbage and discover something way better? Is that even possible? I would think that is not potssible, but the recent past tells the oposite.
+When I did my first blog I loved its home page but two days ago, when I changed the layout of it, I discovered that my old home page was garbage. Two days ago I thought that the design of my blog was almost perfect. Now I think it was garbage. As we say here: "he who does not know god will pray to any saint." And that is exactly what happened. My question now is: in a year or so, will I find that this blog is garbage and discover something way better? Is that even possible? I would think that is not possible, but the recent events suggest the oposite.
 
 ### The changes
 
@@ -35,17 +38,19 @@ There are still some things to do:
 - [Solve hassle with image insertion](https://stackoverflow.com/questions/67660810/is-there-a-way-in-jekyll-to-set-a-base-path-for-images)
 - [Alt text below images](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll)
 
+But while I was at it I thought: "Why not to take this oportunity to improove the design?". My plan was just to change the change the colours and fonts. In fact that is exactly what I did, but at a level I never believed to be possible.
+
 ### The redesign
 
 First of all and the most important thing: **No HTML code has been harmed during the redesign of this blog**. The HTML code hasn't been changed at all. Everything is CSS work. That's nice.
 
-Another important thing: **No useless CSS clases have been created to archive this purpose**. All the redesign has been done by modifying the HTML elements. I have just created one class, `.dontprint`, which is used to hide the home links when printing.
+Another important thing: **No useless CSS clases have been created to archive this purpose**. All the redesign has been done by modifying the CSS of the already existing classes and HTML elements. I have just created one class, `.dontprint`, which is used to hide the home links when printing.
 
-How did I make it? By overwritting the classes used by Jekyll when converting my [Markdown](https://en.wikipedia.org/wiki/Markdown) to HTML. Most of the work has been done on the fonts. To get the fonts right (or what seems right to me) seamed really challenging but after reading some guides I think I made good decisions. At the end of the page I will leave some resources I find interesting but now I want to share with you the most influential one: [Choosing Web Fonts: A Beginner’s Guide](https://design.google/library/choosing-web-fonts-beginners-guide/). First, the content is interesting for begginers. Second, don't you see a similarity between that blog and my blog? No, I did not copy everything. When I found this blog post I already knew that I was going to use roboto, that I wanted black letters over white background and some other decisions. To decide the weight and size of the fonts I used another guide. So what did I took from this website? Two important things: the colours and the links.
+How did I make it? By overwritting the classes used by Jekyll when converting my [Markdown](https://en.wikipedia.org/wiki/Markdown) to HTML. Most of the work has been done on the fonts. To get the fonts right (or what seems right to me) seamed really challenging but after reading some guides I think I made good decisions. At the end of the page I will leave some resources I find interesting but now I want to share with you the most influential one: [Choosing Web Fonts: A Beginner’s Guide](https://design.google/library/choosing-web-fonts-beginners-guide/). First, the content is interesting for begginers. Second, don't you see a similarity between that blog and my blog? No, I did not copy everything. When I found this blog post I already knew that I was going to use roboto, that I wanted black letters over white background and some other things. To decide the weight and size of the fonts I used another guide. So what did I took from this website? Two important things: the colours and the links.
 
 #### Links
 
-Lets start with the links. CSS allow you to modify the apperance of the links under four different circumstances: unvisited, visited, hovered and, pressed. First I thought about changing the color to a lighter gray when hovering and then to an enven lighter gray when pressing. I also was thinking to let the user know when a link has been already visited... probably using another gray? Four grays just for the links are too many grays. Using two different grays for text is fine. Three for some specific purposes can be interesting but Four for the same element? No. If you have a look to the [Google Design blog](https://design.google/library/racial-equity-everyday-products/) they use black for links and on hover they hide the underline. Just beautiful. It is not intrusive, does not require to use more colours, is easy to understand and to implement, gives exactly the right amount of information, it blends really well with the rest of the text etc. I like to use lots of links insde the text and this is a perfect solution. The CSS code looks like this:
+Lets start with the links. CSS allow you to modify the apperance of the links under four different circumstances: unvisited, visited, hovered and, pressed. First I thought about changing the color to a lighter gray when hovering and then to an enven lighter gray when pressing. I also was thinking to let the user know when a link has been already visited... probably using another gray? Four grays just for the links are too many grays. Using two different grays for text is fine. Three for some specific purposes can be interesting but Four for the same element? No. If you have a look to the [Google Design blog](https://design.google/library/racial-equity-everyday-products/) they use black for links and on hover they hide the underline. Just beautiful. It is not intrusive, does not require to use more colours, is easy to understand and to implement, gives exactly the right amount of information, it blends really well with the rest of the text etc. I like to use lots of links during the writting and this is a awsome solution. The CSS code looks like this:
 
 ```css
 a{ color: var(--black);}
@@ -54,7 +59,7 @@ a:hover, a:active {text-decoration: none;}
 
 #### Colours
 
-Now we are going to talk about the colour. In lots of websites I have seen backgrounds and letters that ar gray. Dark gray letters on top of light gray background. I believed in this choice since the contrast was reduced, making it les uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. In that post the letters are gray but in the most recent ones they are using black letters. In the material design guide about [Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards) they also suggest to use dark gray for less importante content. Finally I also have used a light gray to use it as a box for special content, for exmaple, with code blocks:
+Now we are going to talk about the colour. In lots of websites I have seen backgrounds and letters that are gray. Dark gray letters on top of light gray background. I believed in this choice since the contrast was reduced, making it les uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. I am following the path of the bravery with them. Either we win or we fall together, and I don't think google is going to fall any time soon. In the material design guide about [Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards) they also suggest to use dark gray for less importante content. Finally I also have used a light gray to use it as a box for special content, for exmaple, with code blocks:
 
 ```python
 def factorial(x):

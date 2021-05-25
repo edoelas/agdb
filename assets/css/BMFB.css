@@ -21,11 +21,14 @@ body{
 }
 
 h1{ /*Web title*/
+  color: var(--black);
   font-size: 3.5rem;
   font-weight: 500;
-  font-style: normal;
-  line-height: 4.125rem;
   letter-spacing: -.01875rem;
+  word-spacing: normal;
+  line-height: 4.125rem;
+  margin-top: 100px ;  
+  margin-bottom: 50px ;  
   font-variant-ligatures: none;
   text-rendering: optimizeLegibility;
 }
@@ -33,6 +36,13 @@ h1{ /*Web title*/
 h2{ /*Post / section title*/
   font-size: 2.5rem;
   font-weight: 500;
+  letter-spacing: -.01875rem;
+  word-spacing: normal;
+  line-height: 2.5rem;
+  margin-top: 40px ;  
+  margin-bottom: 10px ;  
+  font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
 }
 
 h3{ /*Level 1 title*/
