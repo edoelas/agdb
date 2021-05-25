@@ -33,7 +33,7 @@ There are still some things to do:
 - Improve search
 - Adapt design for smartphones
 - [Solve hassle with image insertion](https://stackoverflow.com/questions/67660810/is-there-a-way-in-jekyll-to-set-a-base-path-for-images)
-- Alt text below images
+- [Alt text below images](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll)
 
 ### The redesign
 
