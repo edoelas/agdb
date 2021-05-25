@@ -59,37 +59,56 @@ a:hover, a:active {text-decoration: none;}
 
 #### Colours
 
-Now we are going to talk about the colour. In lots of websites I have seen backgrounds and letters that are gray. Dark gray letters on top of light gray background. I believed in this choice since the contrast was reduced, making it les uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. I am following the path of the bravery with them. Either we win or we fall together, and I don't think google is going to fall any time soon. In the material design guide about [Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards) they also suggest to use dark gray for less importante content. Finally I also have used a light gray to use it as a box for special content, for exmaple, with code blocks:
+Now we are going to talk about the colour. In lots of websites I have seen backgrounds and letters that are gray. Dark gray letters on top of light gray background. I believed in this choice since the contrast was reduced, making it les uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. I am following the path of the bravery with them. Either we win or we fall together, and I don't think google is going to fall any time soon. In the material design guide about [Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards) they also suggest to use dark gray for less importante content. Finally I have added a light gray to use it as a box for special content, for exmaple, code blocks.
 
-```python
-def factorial(x):
-    if x == 1: return 1
-    else: return (x * factorial(x-1))
-```
- Now I have 4 colours, `#fff`, `#eee`, `#333`, `#000`, each one with a specific purpose. That's all I need. I find it really comfortable to read while keeping a contrast high enough that everybody can read it.
+ Now I have 4 colours, `#fff`, `#eee`, `#333`, `#000`, each one with a specific purpose. That's all I need. It is still comfortable to read and the contrast is high enough that everybody can read it. The color palette is quite strightforward: four colours, two for the background and two for the text.
 
 ![Colours in order: #fff, #eee, #333, #000]({{ media }}/colours.png)
+*Colours in order: #fff, #eee, #333, #000. First one invisible since it is the same colour as the background.*
 
-Another question to think about is which color palette use for the code highlight. I think that is something I will take care in the future. So far I have just choosen the [Tango](http://jwarby.github.io/jekyll-pygments-themes/languages/python.html) theme from [Pygments](https://pygments.org/) but I will modify it soon since I have been told that the bright green and orange might not have enough contrast.
+Another question to think about is which color palette use for the code highlight. I think that is something I will take care of in the future. So far I have just choosen the [Tango](http://jwarby.github.io/jekyll-pygments-themes/languages/python.html) theme from [Pygments](https://pygments.org/) but I will modify it soon since I have been told that some colours might not have enough contrast.
 
 #### Fonts
-As I said I wanted to use Roboto as the font for my text. It is used by google so it must be a good choice. I think the google designers know a couple of things about web design. I was planning to use a secondary font for some specific purposes but looking at the google design blog I found out that they were using only (that's not 100% true) Roboto. In the guide about [the type system](https://material.io/design/typography/the-type-system.html#applying-the-type-scale) I discovered that it was not just about using one or two diffrent fonts and call it a day. It was about choosing the right size, weight, colour and spacing. So once again I believed in Google and used only Roboto. In fact, for the inline code and code blocks I am using Roboto in its mono variant. I am happy the fonts are looking now but there is room for improvement. I have barely touched the spacing between lines, words and characters.
+
+Fonts are really important for this blog. As you have seen there are not fancy graphics, menus, side boxes or anything. Everything is text. Not even buttons, I am using links. The only images you will find are the ones inside the posts and the favicon. I have made the concious decision of not putting an image as the header of each post, as almost any other blog does. The text oriented content is a barrier that once overcome is very rewarding. I was taught that by a terminal.
+
+I wanted to use Roboto as the font for my text. It is used by google so it must be a good choice. I think the google designers know a couple of things about web design. I was planning to use a secondary font for some specific purposes but looking at the google design blog I found out that they were using only Roboto (that's not 100% true). Once again I believed in Google and used only Roboto. In fact, for the inline code and code blocks I am using Roboto in its mono variant. The usage of Roboto as my main and only font is not a fixed decision since I have read that for long text a serif font can be better suited. No one knows what the future holds.
+
+In the guide about [the type system](https://material.io/design/typography/the-type-system.html#applying-the-type-scale) I discovered that it was not just about using one font and call it a day. It was about choosing the right size, weight, colour and spacing. This is the CSS that takes care of the important things related to the `<h1>` tag:
+
+```css
+h1{
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -.01875rem;
+  word-spacing: normal;
+  line-height: 4.125rem;
+  margin-top: 100px ;  
+  margin-bottom: 50px ;  
+  text-rendering: optimizeLegibility;
+}
+```
+
+I am happy the fonts are looking now but there is room for improvement. I have barely touched the spacing between lines, words and characters. I hope you agree that choosing the right font is more complicated than it seems.
 
 ### Conclusion
 
-I have done more things than the ones I have explained here but this is not about web development. My thinking when writting this blog is that I could help other developers who decide to create their own blog. At the end I am using just 90 extra CSS lines and importing 2 fonts. I am not a designer by any mean, in fact, as you may have discovered basically I just have merged some things that I found interesting. If you are curious about the CSS it is published on github under the path `/assets/css/BMFB.css`. The name stands for Better Mother Fu**ng Blog as a tribute to [bettermotherfuckingwebsite](http://bettermotherfuckingwebsite.com/), web that I used as my main inspiration when doing the first version of the Blog.
+I have done more changes than the ones explained here but this blog is not about web development. My reasoning when writting this blog is that I could help other developers who decide to create their own blog. At the end I am using just 100-150 extra CSS lines and importing 2 fonts. I am not a designer by any mean, in fact, as you may have discovered basically I just have merged some things that I found interesting. If you are curious about the CSS it is published on github under the path `/assets/css/BMFB.css`. The name stands for Better Mother Fu**ng Blog as a tribute to [bettermotherfuckingwebsite](http://bettermotherfuckingwebsite.com/), web that I used as my main inspiration when doing the first version of the Blog.
 
-Probably there is one last post about the blog itself where I will talk about the supersimple search engine that I will implement and some minor changes. There are also some markdown elements that I haven't shown yet. Those elements are latex-like math formulas:
+Here there are some markdown elements that I haven't shown yet. Those elements are latex-like math formulas, horizontal rules and tables:
 
 $$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 
-and tables:
+---
 
 | First name      |Last name| Number|
 | :------------- | :----------: | -----------: |
 |  Mario | Vargas   | 123123123    |
 | Manuel   | Goterris | 13058375 |
 | Pablo   | Albiol | 247674363 |
+
+Probably there will be one last post about the blog itself, where I will talk about the supersimple search engine that I will implement and some minor changes.
 
 Here there are some resources that I find interesting:
 
