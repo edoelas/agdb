@@ -1,7 +1,8 @@
 ---
 layout: post
 title: About game engines
-tags: Engine programming-language tool framework
+date: 2021-05-23 20
+tags: ~WIP~ Engine programming-language tool framework
 ---
 
 Second blog post, and on the same day. You can call me a workaholic. The truth is that I just wanted to write something more related to game development. There is a lot of things that I have already learned that I will be publishing during the next few days. Today we are talking about game engines. The title is a bit misleading since I will not talk just about game engines, I will also talk about frameworks and other tools so we could rewrite the title as: "About things that we use to do games". But it was not that catchy.

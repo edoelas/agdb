@@ -1,0 +1,125 @@
+:root {
+  --black: #000;
+  --gray: #333;
+  --light-gray: #eee;
+  --white: #fff;
+}
+
+h1, h2, h3, h4, body, a{  color: var(--black);}
+h5, h6, ::placeholder, input, blockquote{  color: var(--gray);}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white);
+  padding: 0px;
+  margin: 40px auto;
+  max-width: 650px;
+
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+h1{ /*Web title*/
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 4.125rem;
+  letter-spacing: -.01875rem;
+  font-variant-ligatures: none;
+  text-rendering: optimizeLegibility;
+}
+
+h2{ /*Post / section title*/
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3{ /*Level 1 title*/
+  font-size:  1.4rem;
+  font-weight: 700;
+}
+
+h4{ /*Level 2 title*/
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h5{ /*Level 1 subtitle*/
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-block-start: 0em;
+  margin-bottom: 40px;
+}
+
+h6{ /*Level 2 subtitle*/
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-block-start: 0em;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+input{
+  border-width: 0px 0px 1px 0px;
+  outline: none;
+  width: 30%;
+  transition: width 0.2s;
+}
+
+input:focus{
+  width: 100%;
+}
+
+
+@media print {
+  .dontprint{ display: none; }
+}
+
+.highlight{
+  background-color: var(--light-gray);
+  padding: 4px 20px 4px 20px;
+}
+
+code{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.language-plaintext{
+  background-color: var(--light-gray);
+  color: var(--black);
+  padding: 0px 3px 2px 3px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+blockquote{
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+table{
+  margin: auto;
+}
+td, th{
+  padding: 3px 10px;
+}
