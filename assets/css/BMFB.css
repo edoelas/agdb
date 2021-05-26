@@ -1,16 +1,14 @@
 :root {
-  --black: #000;
-  --gray: #333;
-  --light-gray: #eee;
-  --white: #fff;
+  --text: #000;
+  --text-alt: #333;
+  --background: #fff;
+  --background-alt: #eee;
 }
 
-h1, h2, h3, h4, body, a{  color: var(--black);}
-h5, h6, ::placeholder, input, blockquote{  color: var(--gray);}
-
 body{
+  color: var(--text);
   font-family: 'Roboto', sans-serif;
-  background-color: var(--white);
+  background-color: var(--background);
   padding: 0px;
   margin: 40px auto;
   max-width: 650px;
@@ -21,7 +19,7 @@ body{
 }
 
 h1{ /*Web title*/
-  color: var(--black);
+  color: var(--text);
   font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: -.01875rem;
@@ -34,6 +32,7 @@ h1{ /*Web title*/
 }
 
 h2{ /*Post / section title*/
+  color: var(--text);
   font-size: 2.5rem;
   font-weight: 500;
   letter-spacing: -.01875rem;
@@ -46,16 +45,19 @@ h2{ /*Post / section title*/
 }
 
 h3{ /*Level 1 title*/
+  color: var(--text);
   font-size:  1.4rem;
   font-weight: 700;
 }
 
 h4{ /*Level 2 title*/
+  color: var(--text);
   font-size: 1.2rem;
   font-weight: 500;
 }
 
 h5{ /*Level 1 subtitle*/
+  color: var(--text-alt);
   font-size: 0.9rem;
   font-weight: 700;
   margin-block-start: 0em;
@@ -63,21 +65,30 @@ h5{ /*Level 1 subtitle*/
 }
 
 h6{ /*Level 2 subtitle*/
+  color: var(--text-alt);
   font-size: 0.8rem;
   font-weight: 400;
   margin-block-start: 0em;
 
 }
 
+a{color: var(--text);}
 a:hover, a:active {
   text-decoration: none;
 }
 
 input{
   border-width: 0px 0px 1px 0px;
+  border-color: var(--text);
+  background-color: var(--background);
+  color: var(--text-alt);
   outline: none;
   width: 30%;
   transition: width 0.2s;
+}
+
+::placeholder{
+  color: var(--text);
 }
 
 input:focus{
@@ -90,7 +101,7 @@ input:focus{
 }
 
 .highlight{
-  background-color: var(--light-gray);
+  background-color: var(--background-alt);
   padding: 4px 20px 4px 20px;
 }
 
@@ -102,8 +113,8 @@ code{
 }
 
 .language-plaintext{
-  background-color: var(--light-gray);
-  color: var(--black);
+  background-color: var(--background-alt);
+  color: var(--text);
   padding: 0px 3px 2px 3px;
 }
 
@@ -117,12 +128,13 @@ img {
   image-rendering: -moz-crisp-edges;          /* Firefox                        */
   image-rendering: -o-crisp-edges;            /* Opera                          */
   image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated; /* Chrome */
+  image-rendering: pixelated;                 /* Chrome */
   image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
   -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 blockquote{
+  color: var(--text-alt);
   font-size: 1.2em;
   font-weight: 300;
   line-height: 1.6em;
@@ -136,7 +148,7 @@ td, th{
 }
 
 img + em { 
-  color: var(--gray);
+  color: var(--text-alt);
   font-size: 0.8rem;
   font-weight: 400;
   font-style: normal;
@@ -147,5 +159,5 @@ img + em {
 
 hr{
   border-width: 0px 0px 1px 0px;
-  border-color: var(--gray);
+  border-color: var(--text-alt);
 }

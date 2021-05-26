@@ -6,6 +6,7 @@
 - [ ] Adapt design for smartphones
 - [ ] Solve hassle with image insertion
 - Set font spacing
+- Check favicon
 
 # Another Game Development Blog h1
 ## Another Game Development Blog h2
