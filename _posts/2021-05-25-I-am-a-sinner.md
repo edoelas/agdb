@@ -9,15 +9,15 @@ tags: ~WIP~ Presentation meta design blog
 ![How did the blog look befor the redesign.]({{media}}/old_blog.png)
 *How did the blog look befor the redesign.*
 
-I have sinned. I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was just using 60 CSS lines. What have I become? Now I use  around 200 lines of CSS. How many lines I will be using tomorrow? 1.000? 10.000? Nobody knows. I have became what I promissed to destroy. The bloat. I am a monster.
+I have sinned. I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was just using 60 CSS lines. What have I done? Now I use  around 200 lines of CSS. How many lines I will be using tomorrow? 1.000? 10.000? Nobody knows. I have became what I promissed to destroy. I am a monster. I am the father of the bloat.
 
 Okay, enough stupidity for today, now I am going to talk about what happened. Did I just woke up one morning and decided to spend my whole day fiddling with CSS? No, as I said I am not a web designer but, as any human, I like beautiful things. Two days ago, 23 May 2021, the day of the creation of this blog, at 22:08 I sent the blog link to one of my friends and he replies:
 
 > "Ugly as a toad."<br>- A. K.
 
-That comeback opened my eyes. My response was not imediate but that comment fuelled the redesign. The harsh truth is that the default browser fonts are not the best ones.
+That response opened my eyes. My reaction was not imediate but that comment started the redesign. The harsh truth is that the default browser fonts are not the best ones.
 
-When I did my first blog I loved its home page but two days ago, when I changed the layout of it, I discovered that my old home page was garbage. Two days ago I thought that the design of my blog was almost perfect. Now I think it was garbage. As we say here: "Who does not know god will pray to any saint." And that is exactly what happened. Now my question is: in a year or so, will I find that this blog is garbage and discover something way better? Is that even possible? I would think that it is not possible, but the recent events suggest the oposite.
+When I did my first blog I loved its home page but two days ago, when I changed the layout of it, I discovered that my old home page was garbage. Two days ago I thought that the design of my blog was almost perfect. Now I think it was garbage. As we say here: "Who does not know god will prays to any saint." And that is exactly what happened. Now my question is: in a year or so, will I find that this blog is garbage and discover something way better? Is that even possible? I would think that it is not possible, but the recent events suggest the oposite.
 
 ### The changes
 
@@ -38,7 +38,7 @@ There are still some things to do:
 - [Solve hassle with image insertion](https://stackoverflow.com/questions/67660810/is-there-a-way-in-jekyll-to-set-a-base-path-for-images)
 - [Alt text below images](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll)
 
-But while I was at it I thought: "Why not to take this oportunity to improove the design?". My plan was just to change the colours and fonts. In fact that is exactly what I did, but at a level I never believed I would be doing it.
+But while I was at it I thought: "Why not to take this oportunity to improove the design?". My plan was just to change the colours and fonts. In fact that is exactly what I did, but with an attention to the detail I never believed I would be doing it.
 
 ### The redesign
 

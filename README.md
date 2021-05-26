@@ -2,11 +2,11 @@
 
 ## TODO
 
-- [ ] Improve search
-- [ ] Adapt design for smartphones
-- [ ] Solve hassle with image insertion
+- Improve search
+- Adapt design for smartphones
 - Set font spacing
 - Check favicon
+- Solve hassle with image insertion
 
 # Another Game Development Blog h1
 ## Another Game Development Blog h2

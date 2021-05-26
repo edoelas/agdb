@@ -42,6 +42,6 @@ With this post, I was not trying to cover all the important points related to pi
 
 - **[Learn OpenGL](https://learnopengl.com/) website**. A really nice OpenGL guide for advanced beginners. 
 
-- **[Why is every indie game made with Pixel Art?](https://www.youtube.com/watch?v=m48xthwkpI0) video from [Out of Sight](https://www.youtube.com/channel/)**. A really interesting video about why pixel art is so popular in indie games.
+- **[Why is every indie game made with Pixel Art?](https://www.youtube.com/watch?v=m48xthwkpI0) video from [Out of Sight](https://www.youtube.com/channel/UCcmTXZ3oJVe0EHoTE4wCXpA)**. A really interesting video about why pixel art is so popular in indie games.
 
 - **[Unity DOTS vs Handbuilt: Sample Project](https://www.youtube.com/watch?v=tInaI3pU19Y) video from [Nick Caston](https://www.youtube.com/channel/UCWm66r5LauAXin-Asjgo8YQ)**. Video comparing how efficient is Unity compared to C++ and OpenGL.2
