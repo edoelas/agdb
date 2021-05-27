@@ -5,8 +5,9 @@
 - Improve search
 - Adapt design for smartphones
 - Set font spacing
-- Check favicon
+- Check internal links
 - Solve hassle with image insertion
+- Code highlight palette
 
 # Another Game Development Blog h1
 ## Another Game Development Blog h2
