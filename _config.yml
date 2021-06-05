@@ -1,5 +1,6 @@
 plugins:
   - jekyll-feed
+  - jekyll-relative-links
 auto: true
 highlighter: rouge
 baseurl: /agdb/
