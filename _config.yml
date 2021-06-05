@@ -5,3 +5,6 @@ auto: true
 highlighter: rouge
 baseurl: /agdb/
 title: Another game development blog
+relative_links:
+  enabled:     true
+  collections: true
