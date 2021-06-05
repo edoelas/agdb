@@ -54,7 +54,7 @@ Most of the work has been done on the fonts. To get the fonts right (or what see
 
 Let's start with the links. CSS allows you to modify the appearance of the links under four different circumstances: unvisited, visited, hovered and, pressed. First I thought about changing the colour to a lighter grey when hovering and then to an even lighter grey when pressing. I also was thinking to let the user know when a link has been already visited... probably using another grey? Four greys just for the links are too many greys. Using two different greys for text is fine. Three for some specific purposes can be interesting but Four for the same element? No. If you have a look at the [Google Design blog](https://design.google/library/racial-equity-everyday-products/) they use black for links and on hover they hide the underline. Just beautiful. It is not intrusive, does not require to use more colours, is easy to understand and to implement, gives exactly the right amount of information, blends well with the rest of the text etc. Markdown does not have an underline option so it cannot lead to confusion. I like to use lots of links during the writing and this is an awesome solution. The CSS code looks like this:
 
-```CSS
+```css
 a{ color: var(--black);}
 a:hover, a:active {text-decoration: none;}
 ```
