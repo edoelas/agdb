@@ -17,12 +17,13 @@ body{
   font-weight: 400;
   line-height: 1.6em;
 
-  text-align: justify;
-  text-justify: inter-word;
+
 }
 
 p{
-  text-indent: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 2em;
 }
 /*p::first-letter{
   font-size: 120%;
