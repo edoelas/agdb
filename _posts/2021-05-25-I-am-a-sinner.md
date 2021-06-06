@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I am a sinner
-tags: ~WIP~ Presentation meta design blog
+tags: Presentation meta design blog
 ---
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
@@ -27,7 +27,7 @@ Originally I just thought of doing a few quality of life changes. Most of them a
 
 - **Hide useless links when printing**. If you want to print some article now you can do it without printing the ugly [home]({{ site.baseurl }}) links. I don't know if anybody will print them but it is a problem that I have encountered when saving other web pages as PDF.
 
-- **Google analytics**. Google knows what are you eating right now. Are you using [DuckDuckGo](https://duckduckgo.com/)? Useless on this page. I just want to know (for free) how many people is visiting my blog and where are the visitors from. Any alternatives are welcome, my email is at the end of the home screen. 
+- **Google Analytics**. Google knows what are you eating right now. Are you using [DuckDuckGo](https://duckduckgo.com/)? Useless on this page. I just want to know (for free) how many people is visiting my blog and where are the visitors from. Any alternatives are welcome, my email is at the end of the home screen. 
 
 - **Improved the HTML code**. It was quite good, but there were still some problems because I did not understand how [Liquid](https://shopify.github.io/liquid/) works. Now it is even better.
 
@@ -98,23 +98,31 @@ I am happy with how the fonts are looking now but there is room for improvement.
 
 I have done more changes than the ones explained here but this blog is not about web development. My reasoning when writing this blog is that it could help other developers who decide to create their own blog. In the end, I am using just 100-150 extra CSS lines and importing 2 fonts. I am not a designer by any mean as you may have discovered I just have merged some things that I found interesting, so do not take this as a guide. If you are curious about the CSS it is published on GitHub under the path `/assets/css/BMFB.css`. The name stands for Better Mother Fu**ng Blog as a tribute to [bettermotherfuckingwebsite](http://bettermotherfuckingwebsite.com/), the web that I used as my main inspiration when doing the first version of the Blog.
 
-Here there are some markdown elements that I haven't shown yet. Those elements are latex-like math formulas, horizontal rules and tables:
-
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+Here there are some markdown elements that I haven't shown yet. Those elements are latex-like horizontal rules, math formulas, and tables:
 
 ---
 
-| First name      |Last name| Number|
-| :------------- | :----------: | -----------: |
-|  Mario | Vargas   | 123123123    |
-| Manuel   | Goterris | 13058375 |
-| Pablo   | Albiol | 247674363 |
+$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+
+
+| First name |Last name | Number    |
+| :--------- | :------: | --------: |
+|  Mario     | Vargas   | 123123123 |
+| Manuel     | Goterris | 13058375  |
+| Pablo      | Albiol   | 247674363 |
+
 
 Probably there will be one last post about the blog itself where I will talk about the super simple search engine that I will implement and some minor changes. I promise that it will be the last one about web development.
 
-Here there are some resources that I find interesting:
+Here there are some resources that I found interesting while redesigning the blog:
 
 
-[Material design: Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards)
+- [Material design: Text legibility](https://material.io/design/color/text-legibility.html#legibility-standards)
 
-[Material design: The type system](https://material.io/design/typography/the-type-system.html#applying-the-type-scale)
+- [Material design: The type system](https://material.io/design/typography/the-type-system.html#applying-the-type-scale)
+
+- [Choosing Web Fonts: A Beginner’s Guide](https://design.google/library/choosing-web-fonts-beginners-guide/)
+
+- [Never remove CSS outlines](https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/). This post also is interesting because of its design.
+
+- [Google Fonts](https://fonts.google.com/). This is the place where I am taking the fonts from. Easy, free and reliable. 

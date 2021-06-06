@@ -5,10 +5,8 @@
 - Improve search
 - Adapt design for smartphones
 - Set font spacing
-- Check internal links
 - Solve hassle with image insertion
 - Code highlight palette
-- tables style
 
 # Another Game Development Blog h1
 ## Another Game Development Blog h2
