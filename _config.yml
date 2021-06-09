@@ -2,7 +2,6 @@ plugins:
   - jekyll-feed
   - jekyll-relative-links
 auto: true
-highlighter: rouge
 baseurl: /agdb/
 title: Another game development blog
 relative_links:

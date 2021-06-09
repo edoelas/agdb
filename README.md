@@ -2,21 +2,12 @@
 
 ## TODO
 
-- Improve search
+- Improve search: https://lunrjs.com/docs/index.html
 - Adapt design for smartphones
-- Set font spacing
-- Solve hassle with image insertion
-- Code highlight palette
-
-# Another Game Development Blog h1
-## Another Game Development Blog h2
-### Another Game Development Blog h3
-#### Another Game Development Blog h4
-##### Another Game Development Blog h5
-###### Another Game Development Blog h6
-**Another Game Development Blog bold**
-
-Another Game Development Blog normal
+- Solve hassle with image insertion: https://jekyllrb.com/docs/plugins/tags/
+- Code highlight
+- Modificar homescreen para que los titulos no ocupen todo el ancho
+- custom pixel art images
 
 ```
 jekyll serve --livereload --trace

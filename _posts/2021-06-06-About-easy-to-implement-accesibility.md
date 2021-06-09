@@ -8,7 +8,7 @@ tags: Accesibility WIP
 
 
 !!! attention
-    Go with care
+    Work In progress
 
 Imagine: today is the release date of the game you have been waiting during months. Call it Star Citizen, Cyberpunk 2077 or the steam version of Dwarf Fortress. You spend a nice amount of money, download it and start it. Once inside the game you can’t understand the main menu. That’s not a problem, you just guess and manage to start a game. Sencond disapointment: you can’t see the in-game interface. The game is unplayable. It looks interesting, you devise some of the features shown in the trailer, but you can’t play it. It is torture.
 
