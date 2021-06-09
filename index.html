@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91WYMZK8X7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-91WYMZK8X7');
+    </script>
+    <!-- CSS and highlighter -->
+    <link href="/agdb//assets/css/BMFB.css" rel="stylesheet">
+    <link href="/agdb//assets/css/syntax_highlighting.css" rel="stylesheet">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="/agdb//feed.xml">
+    <!-- latex -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- All styles have been aded for testing purposes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <!-- meta -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="edoelas" />
+    <title>Another Game Development Blog</title> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/agdb//favicon.png">
+  </head>
+
+  <body>
+      <div class="content">
+  <header>
+    <h1>Another Game Development Blog</h1>
+  </header>
+
+  <input style="height: 1.6em;" type="text" id="myInput" onkeyup="search()" placeholder="Search...">
+    
+  <ul id="myUL" style="padding-left: 0;">
+    
+    <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
+      <h4 style="display: inline;"><a href="/agdb//2021/06/06/About-easy-to-implement-accesibility.html">About easy to implement visual impairment accessibility features.</a></h4>
+      <h5 style="float: right;"> 6 June 2021</h5><br>
+      <h6>Accesibility, WIP, </h6>
+    </li>
+    
+    <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
+      <h4 style="display: inline;"><a href="/agdb//2021/05/25/I-am-a-sinner.html">I am a sinner</a></h4>
+      <h5 style="float: right;">25 May 2021</h5><br>
+      <h6>Presentation, meta, design, blog, </h6>
+    </li>
+    
+    <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
+      <h4 style="display: inline;"><a href="/agdb//2021/05/23/About-game-engines.html">About game engines</a></h4>
+      <h5 style="float: right;">23 May 2021</h5><br>
+      <h6>Engine, programming-language, tool, framework, </h6>
+    </li>
+    
+    <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
+      <h4 style="display: inline;"><a href="/agdb//2021/05/23/Blog-presentation.html">Blog presentation</a></h4>
+      <h5 style="float: right;">23 May 2021</h5><br>
+      <h6>Presentation, meta, first, </h6>
+    </li>
+    
+  </ul>
+
+  <h2>Contact information</h2>
+  Author: Miguel Edo<br>
+  Email: <a href="mailto:miego.cvcv@gmail.com"> miego.cvcv@gmail.com</a>.<br>
+</div>
+
+<script>
+  // Esto se puede mejorar bastante para permitir incluir:
+  // - espacios con comillas: "ejemplo ejemplo"
+  // - wildcards: ejem_o eje*o
+  // - busquedas por atributo: date:23
+  function search() {
+      var input, filters, ul, li, a, i, txtValue, searchs;
+      input = document.getElementById("myInput");
+      filters = input.value.toUpperCase().split(" ");
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          txtValue = li[i].textContent || li[i].innerText;
+          searchs = filters.map(function(x) {
+            return txtValue.toUpperCase().indexOf(x);
+          })
+          if ( searchs.includes(-1)) {
+              li[i].style.display = "none";
+          } else {
+              li[i].style.display = "";
+          }
+      }
+  }
+</script>
+    <script>
+      //open external links in a new window
+      function external_new_window() {
+          for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+              var b = c[a];
+              if(b.getAttribute("href") && b.hostname !== location.hostname) {
+                  b.target = "_blank";
+                  b.rel = "noopener";
+              }
+          }
+      }
+      //open PDF links in a new window
+      function pdf_new_window ()
+      {
+          if (!document.getElementsByTagName) return false;
+          var links = document.getElementsByTagName("a");
+          for (var eleLink=0; eleLink < links.length; eleLink ++) {
+          if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+              links[eleLink].onclick =
+              function() {
+                  window.open(this.href);
+                  return false;
+              }
+          }
+          }
+      } 
+      pdf_new_window();
+      external_new_window();
+      </script>
+  </body>
+</html>

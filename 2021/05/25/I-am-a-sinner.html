@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91WYMZK8X7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-91WYMZK8X7');
+    </script>
+    <!-- CSS and highlighter -->
+    <link href="/agdb//assets/css/BMFB.css" rel="stylesheet">
+    <link href="/agdb//assets/css/syntax_highlighting.css" rel="stylesheet">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="/agdb//feed.xml">
+    <!-- latex -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- All styles have been aded for testing purposes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <!-- meta -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="edoelas" />
+    <title>I am a sinner</title> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/agdb//favicon.png">
+  </head>
+
+  <body>
+      <a class="dontprint" href="/agdb/">Home</a>
+<article>
+  <header>
+    <h2>I am a sinner</h2>
+    <h5>25 May 2021</h5>
+  </header>
+  <p>TEST</p>
+<p><img alt="How did the blog look before the redesign." src="/agdb/assets/media/2021-05-25-I-am-a-sinner/old_blog.png" />
+<em>How did the blog look before the redesign.</em></p>
+<p>I have sinned. I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was just using 60 CSS lines. What have I done? Now I use around 200 lines of CSS. How many lines I will be using tomorrow? 1.000? 10.000? Nobody knows. I have become what I promised to destroy. I am a monster. I am the father of the bloat.</p>
+<p>Okay, enough stupidity for today, now I am going to talk about what happened. Did I just woke up one morning and decided to spend my whole day fiddling with CSS? No, as I said I am not a web designer but, like any human, I like beautiful things. Two days ago, 23 May 2021, the day of the creation of this blog, at 22:08 I sent the blog link to one of my friends and he replies:</p>
+<blockquote>
+<p>"Ugly as a toad."<br>- A. K.</p>
+</blockquote>
+<p>That response opened my eyes. My reaction was not immediate but that comment started the redesign. The harsh truth is that the default browser fonts are not the best ones.</p>
+<p>When I did my first blog I loved its home page but two days ago, when I changed the layout of it, I discovered that my old home page was garbage. Two days ago I thought that the design of my blog was almost perfect. Now I think it was garbage. As we say here: "Who does not know God will pray to any saint." And that is exactly what happened. Now my question is: in a year or so, will I find that this blog is garbage and discover something way better? Is that even possible? I would think that it is not possible, but the recent events suggest the opposite.</p>
+<h3>The changes</h3>
+<p>Originally I just thought of doing a few quality of life changes. Most of them are already done:</p>
+<ul>
+<li>
+<p><strong>Adding RSS</strong>. Yes, you can read my blog without ever entering my blog. Without appreciating the beauty of it.</p>
+</li>
+<li>
+<p><strong>Hide useless links when printing</strong>. If you want to print some article now you can do it without printing the ugly <a href="/agdb/">home</a> links. I don't know if anybody will print them but it is a problem that I have encountered when saving other web pages as PDF.</p>
+</li>
+<li>
+<p><strong>Google Analytics</strong>. Google knows what are you eating right now. Are you using <a href="https://duckduckgo.com/">DuckDuckGo</a>? Useless on this page. I just want to know (for free) how many people is visiting my blog and where are the visitors from. Any alternatives are welcome, my email is at the end of the home screen. </p>
+</li>
+<li>
+<p><strong>Improved the HTML code</strong>. It was quite good, but there were still some problems because I did not understand how <a href="https://shopify.github.io/liquid/">Liquid</a> works. Now it is even better.</p>
+</li>
+</ul>
+<p>There are still some things to do:</p>
+<ul>
+<li>Improve search</li>
+<li>Adapt design for smartphones</li>
+<li><a href="https://stackoverflow.com/questions/67660810/is-there-a-way-in-jekyll-to-set-a-base-path-for-images">Solve hassle with image insertion</a></li>
+<li><a href="https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll">Alt text below images</a></li>
+</ul>
+<p>But while I was at it I thought: "Why not take this opportunity to improve the design?". My plan was just to change the colours and fonts. In fact, that is exactly what I did, but with an attention to detail I never believed to be possible (for me).</p>
+<h3>The redesign</h3>
+<p>First of all and the most important thing: <strong>no HTML code has been harmed during the redesign of this blog</strong>. The HTML code hasn't been changed at all. Everything is CSS work. That's nice.</p>
+<p>Another important thing: <strong>No useless CSS classes have been created to archive this purpose</strong>. All the redesign has been done by modifying the CSS of already existing classes and HTML elements. I have just created one class, <code>.dontprint</code>, which is used to hide the home links when printing.</p>
+<p>How did I make it? By overwriting the classes used by Jekyll when converting my <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> to HTML. It is not like I could do it any other way. Jekyll generates automagically the HTML code so I can't use classes or choose the HTML tags. </p>
+<p>Most of the work has been done on the fonts. To get the fonts right (or what seems right to me) seemed challenging but after reading some guides I think I made good decisions. At the end of the page I will leave some resources I find interesting, but now I want to share with you the most influential one: <a href="https://design.google/library/choosing-web-fonts-beginners-guide/">Choosing Web Fonts: A Beginner’s Guide</a>. First, the content is interesting for beginners. Second, don't you see a similarity between that blog and my blog? No, I did not copy everything. When I found this blog post I already knew that I was going to use Roboto, that I wanted dark letters over a light background and some other things. To decide the weight and size of the fonts I used another guide. So what did I took from this website? Two important things: the colours and the links.</p>
+<h4>Links</h4>
+<p>Let's start with the links. CSS allows you to modify the appearance of the links under four different circumstances: unvisited, visited, hovered and, pressed. First I thought about changing the colour to a lighter grey when hovering and then to an even lighter grey when pressing. I also was thinking to let the user know when a link has been already visited... probably using another grey? Four greys just for the links are too many greys. Using two different greys for text is fine. Three for some specific purposes can be interesting but Four for the same element? No. If you have a look at the <a href="https://design.google/library/racial-equity-everyday-products/">Google Design blog</a> they use black for links and on hover they hide the underline. Just beautiful. It is not intrusive, does not require to use more colours, is easy to understand and to implement, gives exactly the right amount of information, blends well with the rest of the text etc. Markdown does not have an underline option so it cannot lead to confusion. I like to use lots of links during the writing and this is an awesome solution. The CSS code looks like this:</p>
+<p><code>css
+a{ color: var(--black);}
+a:hover, a:active {text-decoration: none;}</code></p>
+<h4>Colours</h4>
+<p>Now we are going to talk about colour. On lots of websites, I have seen backgrounds and letters that are grey. Dark grey letters on top of a light grey background. I believed in this since the contrast is reduced, making it less uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. I am following the path of the brave with them. Either we win or we fall together, and I don't think google is going to fall any time soon. In the material design guide about <a href="https://material.io/design/color/text-legibility.html#legibility-standards">Text legibility</a> they also suggest using dark grey for less important content, so I did. Finally, I have added a light grey to use as a box for special content, for example, code blocks.</p>
+<p>Now I have 4 colours, <code>#fff</code>, <code>#eee</code>, <code>#333</code>, <code>#000</code>, each one with a specific purpose. That's all I need. It is still comfortable to read and the contrast is high enough that everybody can read it. The colour palette is quite straightforward: four colours, two for the background and two for the text.</p>
+<p><img alt="Colours in order: #fff, #eee, #333, #000" src="/agdb/assets/media/2021-05-25-I-am-a-sinner/colours.png" />
+<em>Colours in order: #fff, #eee, #333, #000. First one invisible since it is the same colour as the background.</em></p>
+<p>Another question to think about is which colour palette to use for the code highlight. I think that is something I will take care of in the future. So far I have just chosen the <a href="http://jwarby.github.io/jekyll-pygments-themes/languages/python.html">Tango</a> theme from <a href="https://pygments.org/">Pygments</a> but I will modify it soon since I have been told that some colours might not have enough contrast.</p>
+<h4>Fonts</h4>
+<p>Fonts are really important for this blog. As you have seen there are no fancy graphics, menus, side boxes or anything. Everything is text. Not even buttons, I am using links. The only images you will find are the ones inside the posts and the favicon. I have made the conscious decision of not putting an image as the header of each post, as almost any other blog does. The fear of text-oriented content is a barrier that once overcome is very rewarding. I was taught that by a terminal.</p>
+<p>I wanted to use Roboto as the font for my text. It is used by Google so it must be a good choice. Google designers must know a couple of things about web design. I was planning to use a secondary font for some specific purposes but looking at the google design blog I found out that they were using only Roboto (that's not 100% true). Once again I believed in Google and used only Roboto. In fact, for the inline code and code blocks I am using Roboto on its mono variant. The usage of Roboto as my main and only font is not a fixed decision since I have read that for long text a serif font can be better suited. No one knows what the future holds.</p>
+<p>In the guide about <a href="https://material.io/design/typography/the-type-system.html#applying-the-type-scale">the type system</a> I discovered that it was not just about using one font and call it a day. It was about choosing the right size, weight, colour and spacing. This is the CSS that takes care of the important things related to the <code>&lt;h1&gt;</code> tag:</p>
+<p><code>css
+h1{
+  color: var(--black);
+  font-size: 3.5rem;
+  font-weight: 500;
+  letter-spacing: -.01875rem;
+  word-spacing: normal;
+  line-height: 4.125rem;
+  margin-top: 100px ;  
+  margin-bottom: 50px ;  
+  text-rendering: optimizeLegibility;
+}</code></p>
+<p>I am happy with how the fonts are looking now but there is room for improvement. I have barely touched the spacing between lines, words and characters. I hope you agree that choosing the right font is more complicated than it seems.</p>
+<h3>Conclusion</h3>
+<p>I have done more changes than the ones explained here but this blog is not about web development. My reasoning when writing this blog is that it could help other developers who decide to create their own blog. In the end, I am using just 100-150 extra CSS lines and importing 2 fonts. I am not a designer by any mean as you may have discovered I just have merged some things that I found interesting, so do not take this as a guide. If you are curious about the CSS it is published on GitHub under the path <code>/assets/css/BMFB.css</code>. The name stands for Better Mother Fu**ng Blog as a tribute to <a href="http://bettermotherfuckingwebsite.com/">bettermotherfuckingwebsite</a>, the web that I used as my main inspiration when doing the first version of the Blog.</p>
+<p>Here there are some markdown elements that I haven't shown yet. Those elements are latex-like horizontal rules, math formulas, and tables:</p>
+<hr />
+<p>$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$</p>
+<table>
+<thead>
+<tr>
+<th align="left">First name</th>
+<th align="center">Last name</th>
+<th align="right">Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Mario</td>
+<td align="center">Vargas</td>
+<td align="right">123123123</td>
+</tr>
+<tr>
+<td align="left">Manuel</td>
+<td align="center">Goterris</td>
+<td align="right">13058375</td>
+</tr>
+<tr>
+<td align="left">Pablo</td>
+<td align="center">Albiol</td>
+<td align="right">247674363</td>
+</tr>
+</tbody>
+</table>
+<p>Probably there will be one last post about the blog itself where I will talk about the super simple search engine that I will implement and some minor changes. I promise that it will be the last one about web development.</p>
+<p>Here there are some resources that I found interesting while redesigning the blog:</p>
+<ul>
+<li>
+<p><a href="https://material.io/design/color/text-legibility.html#legibility-standards">Material design: Text legibility</a></p>
+</li>
+<li>
+<p><a href="https://material.io/design/typography/the-type-system.html#applying-the-type-scale">Material design: The type system</a></p>
+</li>
+<li>
+<p><a href="https://design.google/library/choosing-web-fonts-beginners-guide/">Choosing Web Fonts: A Beginner’s Guide</a></p>
+</li>
+<li>
+<p><a href="https://www.a11yproject.com/posts/2013-01-25-never-remove-css-outlines/">Never remove CSS outlines</a>. This post also is interesting because of its design.</p>
+</li>
+<li>
+<p><a href="https://fonts.google.com/">Google Fonts</a>. This is the place where I am taking the fonts from. Easy, free and reliable. </p>
+</li>
+</ul>
+</article>
+<br>
+<br>
+<a class="dontprint" href="/agdb/">Home</a>
+    <script>
+      //open external links in a new window
+      function external_new_window() {
+          for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+              var b = c[a];
+              if(b.getAttribute("href") && b.hostname !== location.hostname) {
+                  b.target = "_blank";
+                  b.rel = "noopener";
+              }
+          }
+      }
+      //open PDF links in a new window
+      function pdf_new_window ()
+      {
+          if (!document.getElementsByTagName) return false;
+          var links = document.getElementsByTagName("a");
+          for (var eleLink=0; eleLink < links.length; eleLink ++) {
+          if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+              links[eleLink].onclick =
+              function() {
+                  window.open(this.href);
+                  return false;
+              }
+          }
+          }
+      } 
+      pdf_new_window();
+      external_new_window();
+      </script>
+  </body>
+</html>

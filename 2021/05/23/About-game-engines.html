@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91WYMZK8X7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-91WYMZK8X7');
+    </script>
+    <!-- CSS and highlighter -->
+    <link href="/agdb//assets/css/BMFB.css" rel="stylesheet">
+    <link href="/agdb//assets/css/syntax_highlighting.css" rel="stylesheet">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="/agdb//feed.xml">
+    <!-- latex -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true } });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- All styles have been aded for testing purposes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <!-- meta -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="edoelas" />
+    <title>About game engines</title> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/agdb//favicon.png">
+  </head>
+
+  <body>
+      <a class="dontprint" href="/agdb/">Home</a>
+<article>
+  <header>
+    <h2>About game engines</h2>
+    <h5>23 May 2021</h5>
+  </header>
+  <p>TESTSecond blog post, and on the same day. You can call me a workaholic. The truth is that I just wanted to write something more related to game development. There are lots of things I have already learned that I will be publishing during the next few days. Today we are talking about game engines. The title is a bit misleading since I will not talk just about game engines, I will also talk about frameworks and other tools, we could rewrite the title as: "About things that we use to do games". But it was not that catchy.</p>
+<p>When we decide to develop a game the first important decision is what do we want to develop. And it is not until we have taken that decision (or at least, we have a slight idea of the answer) that we can move to the next big question: "Which tools should I use?". Most of the time we are referring to the <a href="https://en.wikipedia.org/wiki/Game_engine">game engine</a>. And that is a quite difficult question. First of all, I am not a game engine expert. As I wrote in the first post I barely know anything about game development, but  I know some things about computer science and I will say a few words that can be helpful for beginners.</p>
+<ol>
+<li>
+<p><strong>Avoid searching on google "Which is the best game engine?" or similar questions</strong>.</p>
+<p>Most of the results of that search will be pages that rank game engines based on doubtful criteria. I am not going to talk about why probably those rankings are crap but I will say this: taking your decision based on those rankings makes no sense. </p>
+<p>Each game has different requirements. If you are going to do a 2D roguelike why would you pick the fastest 3D rendering game engine? Or if you want to make a simple puzzle game, why would you choose the game engine with the best physics engine? I think that there is no need to further develop this point. My suggestion is to make a list with the requirements of your games, with at least two sections: mandatory features and nice to have ones. Once you have that list you can start your search.</p>
+</li>
+<li>
+<p><strong>Game development frameworks also exist</strong>.</p>
+<p>I feel that most of the people interested in game design come from two groups: people interested in art and people interested in computers. If you are an artist with no experience in programming, I would suggest you to pick a game engine, but if you are a computer engineer,  you probably want to have a look at some of the frameworks. For me, the main advantages of frameworks are that you have more freedom and the chance to automate everything. No more clicking buttons and selecting dropdowns.</p>
+<p>That being said, frameworks usually are better suited for some kinds of games over others. If you want to do a 3D shooter game, a game engine with a nice level editor and illumination will be better. I also have the feeling that game engines tend to give you pre-made solutions while game frameworks leave these problems to the user. For example, all the big game engines give you some kind of <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS</a>, but frameworks like <a href="https://libgdx.com/">libGDX</a> or <a href="https://www.raylib.com/index.html">raylib</a> do not include it. Game frameworks are more barebones.</p>
+</li>
+<li>
+<p><strong>Community, documentation, and programming language</strong>.</p>
+<p>The three most important things in a Linux distro for me are community, documentation and repositories. It is a good idea to follow the same approach with game engines/frameworks. Instead of repositories now we are talking about programming languages and libraries.</p>
+<p>Of course, first, you need to make sure that it has the features that you need but after that, I think this is the next obvious rule to follow. These three things won't make your game run faster or to be prettier, at least not directly, but they will allow you to have a smoother experience. This point is especially important for beginners, like me. When starting the complexity can be a huge barrier.</p>
+<p>Programing languages is a huge topic on its own but I would suggest you <strong>not</strong> to pick the engine based on the languages that you know but the other way around, pick the language based on the engine that you are going to use. Lots of frameworks allow you to use multiple programming languages. Raylib for example has bindings for a ton of programming languages and libGDX can be used with most of the languages that run under the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">Java Virtual Machine</a>. Game engines usually are more restrictive but for example, <a href="https://godotengine.org/">Godot</a> allows you to use GDScript, Visual Scripting, C# and, C++. One of the most popular game engines for indie games, Unity, allows you to use C++ and C#. There are <a href="https://www.reddit.com/r/golang/comments/kqg7pl/unitygolang_using_golang_as_a_scripting_engine/">workarounds</a> in order to use other languages, but I would suggest against them because usually, the communities around these are non-existent. </p>
+</li>
+<li>
+<p><strong>You do not need such a powerful game engine</strong>.</p>
+<p>If you are a <a href="https://en.wikipedia.org/wiki/AAA_(video_game_industry)">AAA</a> company or you are planning to start a revolution in real-time 3D graphics forget about this point. If you are an indie developer I think it makes a lot of sense. Believe me, I have been there, I have been obsessed with using the fastest tools and it was a big mistake that was just slowing me down. If you do not believe me make a list of all the indie games that are not 2d or low poly and use high-resolution textures and models. I think you will have a hard time. And there is a reason for that: these kind of assets are really expensive (in terms of time and money), so it is not suitable for indie games, where the budget is a big constraint. I am not saying that you shouldn't pay attention to how fast is a game engine when picking one, I am just saying that please do not become obsessed as I did. Computers nowadays are incredibly powerful and these kind of super-fast tools are harder to master. Try to do anything with C and OpenGL and you will understand why.</p>
+</li>
+</ol>
+<p>With this post, I was not trying to cover all the important points related to picking a game engine. I just wanted to talk about some that usually are overlooked by beginners. I hope that this has been useful or at least interesting. Now I am going to leave some resources that came to my mind while writing this.</p>
+<ul>
+<li>
+<p><strong><a href="https://www.youtube.com/user/gamefromscratch">Gamefromscratch</a> YouTube channel</strong>. Mostly reviews of tools and resources for game development.</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/user/TheChernoProject">The Cherno</a> YouTube channel</strong>. A madlad who is creating his own game engine. Advanced but interesting. Also incredibly long.</p>
+</li>
+<li>
+<p><strong><a href="https://learnopengl.com/">Learn OpenGL</a> website</strong>. A really nice OpenGL guide for advanced beginners. </p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=m48xthwkpI0">Why is every indie game made with Pixel Art?</a> video from <a href="https://www.youtube.com/channel/UCcmTXZ3oJVe0EHoTE4wCXpA">Out of Sight</a></strong>. A really interesting video about why pixel art is so popular in indie games.</p>
+</li>
+<li>
+<p><strong><a href="https://www.youtube.com/watch?v=tInaI3pU19Y">Unity DOTS vs Handbuilt: Sample Project</a> video from <a href="https://www.youtube.com/channel/UCWm66r5LauAXin-Asjgo8YQ">Nick Caston</a></strong>. Video comparing how efficient is Unity compared to C++ and OpenGL.2</p>
+</li>
+</ul>
+</article>
+<br>
+<br>
+<a class="dontprint" href="/agdb/">Home</a>
+    <script>
+      //open external links in a new window
+      function external_new_window() {
+          for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+              var b = c[a];
+              if(b.getAttribute("href") && b.hostname !== location.hostname) {
+                  b.target = "_blank";
+                  b.rel = "noopener";
+              }
+          }
+      }
+      //open PDF links in a new window
+      function pdf_new_window ()
+      {
+          if (!document.getElementsByTagName) return false;
+          var links = document.getElementsByTagName("a");
+          for (var eleLink=0; eleLink < links.length; eleLink ++) {
+          if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+              links[eleLink].onclick =
+              function() {
+                  window.open(this.href);
+                  return false;
+              }
+          }
+          }
+      } 
+      pdf_new_window();
+      external_new_window();
+      </script>
+  </body>
+</html>
