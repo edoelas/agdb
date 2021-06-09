@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About easy to implement visual impairment accessibility features.
+title: Easy to implement visual impairment accessibility features.
 tags: Accesibility WIP
 ---
 
@@ -106,15 +106,50 @@ That means that we should not worry about the colours whose only purpose is to b
 
 Just one color, used in the vertical separators, has changed. In the first example we see how the shadows are lost, but all the important information still is there. On the second example the vertical separators disapear. This information is not trivial, so we should avoid designs like this one. Also, it looks like crap.
 
-As I said, a high contrast palette might not be enough. This is specially true when colours are meaningful inside a game. For example colours of teams. In these kinds of situations is hard to design with high contrast. What if there are 5, or even more, teams? Should each one have a different luminance?  Thankfully these situations are not a problem for people with low vision problems. As far as there is enough contrast between the players and the background they will be able to see properly the shapes. But what for colour blind people? Let's see an example:
+As I said, a high contrast palette might not be enough. This is specially true when colours are meaningful, for example, colours of teams. In these kinds of situations is hard to design with high contrast. What if there are 5, or even more, teams? Should each one have a different luminance?  Thankfully these situations are not a problem for people with low vision problems. As far as there is enough contrast between the players and the background they will be able to see properly the shapes. But what for colour blind people? Let's see an example:
 
 
 ![Example showing two teams, green and red, over brown background. Second image with deuteronopia filter.]({{ media }}/teams_test2.png)
 *Example showing two teams, green and red, over brown background.Second image with deuteronopia filter.*
 
-As you can see in thes image
+The first image has gone through a deuteronopia filter. yes, if you have deuteronopia you will have a hard time playing this game. Deuteronopia is one kind of colour blindness, but there are more. First of all, what is exacly colour blindness? The [American Academy of Ophtamology](https://www.aao.org/eye-health/diseases/what-is-color-blindness) explains it in their website:
 
-### Resources
+> Color blindness occurs when you are unable to see colors in a normal way. [...] Color blindness can happen when one or more of the color cone cells are absent, not working, or detect a different color than normal.
+
+In our retina we have rods and cones. Rods detect light intensity and cones colour. We have three different types of cones, each type detect one colour: red, green and blue. The combination of the signal detected by the cones is transformed in the [hue](https://en.wikipedia.org/wiki/Hue) we perceive. It is not a coincidence that we use the RGB model. Deuteranopia, the problem simulated in the image, has to do with the green cones, they are not able to see the green.
+
+![Image showing simulations of the different problems related to colour perception.]({{ media }}/color_blind_types.png)
+*Image showing simulations of the different problems related to colour perception.*
+
+Around 4.5% of the population has some kind of colour blindness. Just in case you did not noticed it, 4.5% is a ton of people. The most common of the colour related problems is Deuteranopia (problems with green cones), which results in a similar perceived colour palette to the second most common problem, protanopia (problem with red cones). These two probles usally are refered together as red-green colour blindness. Then there is Tritanotopia, which is really rare (around 1 every 10.000 people) and has to do with the blue cones. And lastly there is Achromatopsia, where your cones are not working at all and you see the life in shades of gray. Thankfully this one is ultra rare, afecting one person every 33.000.
+
+At this point I think you already know how to make it easier for colour blind people to play our games. You are right, with an alternative colour palette. But which one? Don't worry, there are already made accesible palettes. My recomendations are The [Okabe-Ito](https://jfly.uni-koeln.de/color/#checker) or [Tol](https://personal.sron.nl/~pault/#sec:qualitative)'s palette. Both of them work really well, are widly supported and were created based on scientific evidence. As a curious fact I will say that the Okabe-Ito palette is the one used in the book [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html) published by [o'reilly](https://www.oreilly.com/). Okabe-Ito's palette is composed of 8 colours while Tol suggest diferent palettes so we can choose the right one for our application. If you have to pick one I would suggest you to visit their posts with a tool to simulate the colour vision deficiencies (I recomend Spark) and judge by yourself. Personally I prefer the Okabe-Ito one.
+
+![The palette proposed by Masataka Okabe and Kei Ito: #E60F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000 .]({{ media }}/okabe-ito.png)
+*The palette proposed by Masataka Okabe and Kei Ito: #E60F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000 .*
+
+![One palette proposed by Paul Tol: #4477AA, #66CCEE, #228833, #CCBB44, #EE6677, #AA3377, #BBBBBB .]({{ media }}/tol.png)
+*One of the palettes proposed by Paul Tol: #4477AA, #66CCEE, #228833, #CCBB44, #EE6677, #AA3377, #BBBBBB .*
+
+I think now it is an adequate moment to make a call to [Matplotlib](https://matplotlib.org/) to change its default colour palette.
+
+The final boss when it comes to color blindness is Achromatopsia. No hue at all. I have to admit that this one does not have an easy fix as changing the colour palette, but since we are here it is worthit talking about it. The only way to do it is not relying in colour, we need alternative ways to give the user this information. If your game uses colour to indicate things like kinds of enemies or different kinds of ammo you might think that this must be imposible. If there is a game called [Hue](https://www.curve-digital.com/en-us/games/detail/5/hue/) which managed to do it you can do it too. Another one [is Chroma Gun](https://pixel-maniacs.com/chromagun) that, you guessed it, is about colours. They just put icons on top of the colours.
+
+![Example of the accesibility features of Hue.]({{ media }}/hue_game.jpg)
+*Example of the accesibility features of Hue.*
+
+![Example of the accesibility features of Chroma Gun.]({{ media }}/chroma_gun.png)
+*Example of the accesibility features of Chroma Gun.*
+
+Besides the accesibility, making a game where the only difference is the colour sometimes feels really cheap. For example, if your enemy has evolved and now is stronger do not change it's colour from purple to red and call it a day. Add some spikes or fire to it's design, make it interesting.
+
+### Conclusion
+
+If you have reached the end of the post I am sure that you are aware of the importance of accesibility in games. Allowing these people to enjoy our games is the least we can do for them, and, as shown in this post, to do this does not mean to invest exhorbitants ammounts of money or need for an specialist in our team. With something as simple as allowing for an alternative palette and making things bigger we can make our game more playable.
+
+Today we have talked about visual probles, but saddly there are way more. Maybe in the future I make a post about motor disabilities since custom periferals is an interesting topic, but who knows. I cannot finish this post without suggesting you the videos from [Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) about [visual](https://www.youtube.com/watch?v=xrqdU4cZaLw), [cognitive](https://www.youtube.com/watch?v=ObhvacfIOg0), [motor](https://www.youtube.com/watch?v=Ufe0i26DGiA) and [auditory](https://www.youtube.com/watch?v=4NGe4dzlukc) disabilities. They are a must. Each video consist in 10 minutes with plenty of useful recomendations and examples of real games. Also he makes a [yearly review of the state of the accesibility in games](https://www.youtube.com/watch?v=RWQcuBigOj0). 
+
+Finally, I leave you with some resources that I found interesting while creating this post:
 
 - [Level Up – A Guide to Game UI (with Infographic)](https://www.toptal.com/designers/gui/game-ui): nice explanation about the different kinds of game UI.
 
@@ -129,3 +164,5 @@ As you can see in thes image
 - [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&showtechniques=141%2C146&currentsidebar=%23col_overview#contrast-enhanced): reference made by the Web Accesibility Initiative.
 
 - [jsColorblindSimulator](http://mapeper.github.io/jsColorblindSimulator/): the best color blind simulator for images I have found. Here it is the [github repo](https://github.com/MaPePeR/jsColorblindSimulator). Only thing missing is the option to download images.
+
+- [Coloring for Colorblindness](https://davidmathlogic.com/colorblind/): amazing post about colour palettes focused in color blind people. It has a colour picker that allows us to create a palete and simulates how it is seen by people with deuteranopia, protanopia and tritanopia. 
