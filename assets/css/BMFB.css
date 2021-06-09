@@ -112,9 +112,11 @@ input:focus{
   .dontprint{ display: none; }
 }
 
-.highlight{
+
+/*  CODE HIGHLIGHT  */
+pre{
   background-color: var(--background-alt);
-  padding: 4px 20px 4px 20px;
+  padding: 20px;
 }
 
 code{
@@ -124,20 +126,41 @@ code{
   line-height: 1em;
 }
 
+.codehilitetable{
+  margin: 0px;
+  width: 100%;
+}
+
+.linenos{
+  color: var(--text-alt);
+  text-align: center;
+  padding: 7px;
+}
+
 .language-plaintext{
   background-color: var(--background-alt);
   color: var(--text);
   padding: 0px 3px 2px 3px;
 }
 
+
+/* IMAGES */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+}
 
- }
-
+.pixel{
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
 blockquote{
   color: var(--text-alt);
   font-size: 1.2em;

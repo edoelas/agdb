@@ -80,31 +80,33 @@
 <p>Most of the work has been done on the fonts. To get the fonts right (or what seems right to me) seemed challenging but after reading some guides I think I made good decisions. At the end of the page I will leave some resources I find interesting, but now I want to share with you the most influential one: <a href="https://design.google/library/choosing-web-fonts-beginners-guide/">Choosing Web Fonts: A Beginner’s Guide</a>. First, the content is interesting for beginners. Second, don't you see a similarity between that blog and my blog? No, I did not copy everything. When I found this blog post I already knew that I was going to use Roboto, that I wanted dark letters over a light background and some other things. To decide the weight and size of the fonts I used another guide. So what did I took from this website? Two important things: the colours and the links.</p>
 <h4>Links</h4>
 <p>Let's start with the links. CSS allows you to modify the appearance of the links under four different circumstances: unvisited, visited, hovered and, pressed. First I thought about changing the colour to a lighter grey when hovering and then to an even lighter grey when pressing. I also was thinking to let the user know when a link has been already visited... probably using another grey? Four greys just for the links are too many greys. Using two different greys for text is fine. Three for some specific purposes can be interesting but Four for the same element? No. If you have a look at the <a href="https://design.google/library/racial-equity-everyday-products/">Google Design blog</a> they use black for links and on hover they hide the underline. Just beautiful. It is not intrusive, does not require to use more colours, is easy to understand and to implement, gives exactly the right amount of information, blends well with the rest of the text etc. Markdown does not have an underline option so it cannot lead to confusion. I like to use lots of links during the writing and this is an awesome solution. The CSS code looks like this:</p>
-<p><code>css
-a{ color: var(--black);}
-a:hover, a:active {text-decoration: none;}</code></p>
+<div class="codehilite"><pre><span></span><code><span class="nt">a</span><span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">black</span><span class="p">);}</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="o">,</span> <span class="nt">a</span><span class="p">:</span><span class="nd">active</span> <span class="p">{</span><span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;}</span>
+</code></pre></div>
+
 <h4>Colours</h4>
 <p>Now we are going to talk about colour. On lots of websites, I have seen backgrounds and letters that are grey. Dark grey letters on top of a light grey background. I believed in this since the contrast is reduced, making it less uncomfortable to look at, while the text could be read perfectly. But the designers in google are really brave. Black on top of white. I am following the path of the brave with them. Either we win or we fall together, and I don't think google is going to fall any time soon. In the material design guide about <a href="https://material.io/design/color/text-legibility.html#legibility-standards">Text legibility</a> they also suggest using dark grey for less important content, so I did. Finally, I have added a light grey to use as a box for special content, for example, code blocks.</p>
 <p>Now I have 4 colours, <code>#fff</code>, <code>#eee</code>, <code>#333</code>, <code>#000</code>, each one with a specific purpose. That's all I need. It is still comfortable to read and the contrast is high enough that everybody can read it. The colour palette is quite straightforward: four colours, two for the background and two for the text.</p>
-<p><img alt="Colours in order: #fff, #eee, #333, #000" src="/agdb/assets/media/2021-05-25-I-am-a-sinner/colours.png" />
+<p><img alt="Colours in order: #fff, #eee, #333, #000" class="pixel" src="/agdb/assets/media/2021-05-25-I-am-a-sinner/colours.png" />
 <em>Colours in order: #fff, #eee, #333, #000. First one invisible since it is the same colour as the background.</em></p>
 <p>Another question to think about is which colour palette to use for the code highlight. I think that is something I will take care of in the future. So far I have just chosen the <a href="http://jwarby.github.io/jekyll-pygments-themes/languages/python.html">Tango</a> theme from <a href="https://pygments.org/">Pygments</a> but I will modify it soon since I have been told that some colours might not have enough contrast.</p>
 <h4>Fonts</h4>
 <p>Fonts are really important for this blog. As you have seen there are no fancy graphics, menus, side boxes or anything. Everything is text. Not even buttons, I am using links. The only images you will find are the ones inside the posts and the favicon. I have made the conscious decision of not putting an image as the header of each post, as almost any other blog does. The fear of text-oriented content is a barrier that once overcome is very rewarding. I was taught that by a terminal.</p>
 <p>I wanted to use Roboto as the font for my text. It is used by Google so it must be a good choice. Google designers must know a couple of things about web design. I was planning to use a secondary font for some specific purposes but looking at the google design blog I found out that they were using only Roboto (that's not 100% true). Once again I believed in Google and used only Roboto. In fact, for the inline code and code blocks I am using Roboto on its mono variant. The usage of Roboto as my main and only font is not a fixed decision since I have read that for long text a serif font can be better suited. No one knows what the future holds.</p>
 <p>In the guide about <a href="https://material.io/design/typography/the-type-system.html#applying-the-type-scale">the type system</a> I discovered that it was not just about using one font and call it a day. It was about choosing the right size, weight, colour and spacing. This is the CSS that takes care of the important things related to the <code>&lt;h1&gt;</code> tag:</p>
-<p><code>css
-h1{
-  color: var(--black);
-  font-size: 3.5rem;
-  font-weight: 500;
-  letter-spacing: -.01875rem;
-  word-spacing: normal;
-  line-height: 4.125rem;
-  margin-top: 100px ;  
-  margin-bottom: 50px ;  
-  text-rendering: optimizeLegibility;
-}</code></p>
+<div class="codehilite"><pre><span></span><code><span class="nt">h1</span><span class="p">{</span>
+  <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">black</span><span class="p">);</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mf">3.5</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="mi">500</span><span class="p">;</span>
+  <span class="k">letter-spacing</span><span class="p">:</span> <span class="mf">-.01875</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">word-spacing</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mf">4.125</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">margin-top</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span> <span class="p">;</span>  
+  <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span> <span class="p">;</span>  
+  <span class="n">text-rendering</span><span class="p">:</span> <span class="kc">optimizeLegibility</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <p>I am happy with how the fonts are looking now but there is room for improvement. I have barely touched the spacing between lines, words and characters. I hope you agree that choosing the right font is more complicated than it seems.</p>
 <h3>Conclusion</h3>
 <p>I have done more changes than the ones explained here but this blog is not about web development. My reasoning when writing this blog is that it could help other developers who decide to create their own blog. In the end, I am using just 100-150 extra CSS lines and importing 2 fonts. I am not a designer by any mean as you may have discovered I just have merged some things that I found interesting, so do not take this as a guide. If you are curious about the CSS it is published on GitHub under the path <code>/assets/css/BMFB.css</code>. The name stands for Better Mother Fu**ng Blog as a tribute to <a href="http://bettermotherfuckingwebsite.com/">bettermotherfuckingwebsite</a>, the web that I used as my main inspiration when doing the first version of the Blog.</p>
