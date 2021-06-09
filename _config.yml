@@ -8,3 +8,7 @@ title: Another game development blog
 relative_links:
   enabled:     true
   collections: true
+markdown: CustomProcessor
+
+disable_disk_cache: true
+incremental: false

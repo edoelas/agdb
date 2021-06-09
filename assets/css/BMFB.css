@@ -20,17 +20,15 @@ body{
 
 }
 
-p{
-  /*text-align: justify;
-  text-justify: inter-word;*/
+/* La indentacion afecta tambien al texto de las imagenes 
+article > p{
   text-indent: 1.5em;
 }
-p *, li *, blockquote * {
-  text-indent: 0em;
+
+article > p::first-letter{
+  font-size: 180%;
 }
-/*p::first-letter{
-  font-size: 120%;
-}*/
+*/
 
 h1{ /*Web title*/
   color: var(--text);
@@ -138,14 +136,7 @@ img {
   margin-right: auto;
   width: 100%;
 
-  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-  image-rendering: -moz-crisp-edges;          /* Firefox                        */
-  image-rendering: -o-crisp-edges;            /* Opera                          */
-  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated;                 /* Chrome */
-  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
+ }
 
 blockquote{
   color: var(--text-alt);
@@ -178,4 +169,8 @@ img + em {
 hr{
   border-width: 0px 0px 1px 0px;
   border-color: var(--text-alt);
+}
+
+pre {
+  white-space: pre-wrap;
 }
