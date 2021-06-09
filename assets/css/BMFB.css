@@ -174,3 +174,21 @@ hr{
 pre {
   white-space: pre-wrap;
 }
+
+.attention.admonition{
+  background-color: rgb(255, 190, 190);
+}
+.attention .admonition-title {
+  background-color: rgb(187, 34, 34);
+}
+
+.admonition{
+  padding: 5px 0px 5px 20px;
+}
+
+.admonition-title{
+  font-weight: 600;
+  color: white;
+  margin: -5px 0px -5px -20px;
+  padding: 5px 0px 5px 20px;
+}

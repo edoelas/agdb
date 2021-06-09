@@ -6,6 +6,10 @@ tags: Accesibility WIP
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
 
+
+!!! attention
+    Go with care
+
 Imagine: today is the release date of the game you have been waiting during months. Call it Star Citizen, Cyberpunk 2077 or the steam version of Dwarf Fortress. You spend a nice amount of money, download it and start it. Once inside the game you can’t understand the main menu. That’s not a problem, you just guess and manage to start a game. Sencond disapointment: you can’t see the in-game interface. The game is unplayable. It looks interesting, you devise some of the features shown in the trailer, but you can’t play it. It is torture.
 
 This is an empathy exercise about what people with visual impairment feels with a lot of games. Hopefully, most of the people reading this will not have this problem. Vision related disabilities have a huge impact on the daily people's lifes, the least we can do as a game developers is to allow them to enjoy our games. At the end that's the goal of game developers, to create something for others to enjoy.

@@ -17,3 +17,10 @@
 **Another Game Development Blog bold**
 
 Another Game Development Blog normal
+
+```
+jekyll serve --livereload --trace
+jekyll build
+jgd
+
+```
