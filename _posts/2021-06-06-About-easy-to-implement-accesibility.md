@@ -2,7 +2,7 @@
 layout: post
 title: Easy to implement visual impairment accessibility features
 date: 2021-06-11 
-tags: Accesibility
+tags: Accesibility WIP
 ---
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
