@@ -46,26 +46,32 @@
       
     
       
-      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
-        <h4 style="display: inline;"><a href="/agdb//2021/05/25/I-am-a-sinner.html">I am a sinner</a></h4>
-        <h5 style="float: right;">25 May 2021</h5><br>
-        <h6>Presentation, meta, design, blog, </h6>
+      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;" id=/2021/05/25/I-am-a-sinner.html>
+        <div style="display: flex; align-items: baseline;">
+          <h4 style="display: inline; flex-grow: 4; margin: 0; flex-basis: 0"><a href="/agdb//2021/05/25/I-am-a-sinner.html">I am a sinner</a></h4>
+          <h5 style="margin-left: 10%;">25 May 2021</h5><br>
+        </div>
+        <h6>Presentation, meta, design, blog</h6>
       </li>
       
     
       
-      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
-        <h4 style="display: inline;"><a href="/agdb//2021/05/23/About-game-engines.html">About game engines</a></h4>
-        <h5 style="float: right;">23 May 2021</h5><br>
-        <h6>Engine, programming-language, tool, framework, </h6>
+      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;" id=/2021/05/23/About-game-engines.html>
+        <div style="display: flex; align-items: baseline;">
+          <h4 style="display: inline; flex-grow: 4; margin: 0; flex-basis: 0"><a href="/agdb//2021/05/23/About-game-engines.html">About game engines</a></h4>
+          <h5 style="margin-left: 10%;">23 May 2021</h5><br>
+        </div>
+        <h6>Engine, programming-language, tool, framework</h6>
       </li>
       
     
       
-      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;">
-        <h4 style="display: inline;"><a href="/agdb//2021/05/23/Blog-presentation.html">Blog presentation</a></h4>
-        <h5 style="float: right;">23 May 2021</h5><br>
-        <h6>Presentation, meta, first, </h6>
+      <li style="text-align:left;list-style-type: none;margin-bottom: 1em;" id=/2021/05/23/Blog-presentation.html>
+        <div style="display: flex; align-items: baseline;">
+          <h4 style="display: inline; flex-grow: 4; margin: 0; flex-basis: 0"><a href="/agdb//2021/05/23/Blog-presentation.html">Blog presentation</a></h4>
+          <h5 style="margin-left: 10%;">23 May 2021</h5><br>
+        </div>
+        <h6>Presentation, meta, first</h6>
       </li>
       
     
@@ -77,29 +83,40 @@
 </div>
 
 <script>
-  // Esto se puede mejorar bastante para permitir incluir:
-  // - espacios con comillas: "ejemplo ejemplo"
-  // - wildcards: ejem_o eje*o
-  // - busquedas por atributo: date:23
-  function search() {
-      var input, filters, ul, li, a, i, txtValue, searchs;
-      input = document.getElementById("myInput");
-      filters = input.value.toUpperCase().split(" ");
-      ul = document.getElementById("myUL");
-      li = ul.getElementsByTagName("li");
-      for (i = 0; i < li.length; i++) {
-          txtValue = li[i].textContent || li[i].innerText;
-          searchs = filters.map(function(x) {
-            return txtValue.toUpperCase().indexOf(x);
-          })
-          if ( searchs.includes(-1)) {
-              li[i].style.display = "none";
-          } else {
-              li[i].style.display = "";
-          }
+  window.documents = 
+    [
+      {
+        "title": "Easy to implement visual impairment accessibility features",
+        "tags": ["Accesibility", "WIP"],
+        "date": "2021-06-11 00:00:00 +0200",
+        "url": "/2021/06/11/About-easy-to-implement-accesibility.html"
+      },
+    
+      {
+        "title": "I am a sinner",
+        "tags": ["Presentation", "meta", "design", "blog"],
+        "date": "2021-05-25 00:00:00 +0200",
+        "url": "/2021/05/25/I-am-a-sinner.html"
+      },
+    
+      {
+        "title": "About game engines",
+        "tags": ["Engine", "programming-language", "tool", "framework"],
+        "date": "2021-05-23 20:00:00 +0200",
+        "url": "/2021/05/23/About-game-engines.html"
+      },
+    
+      {
+        "title": "Blog presentation",
+        "tags": ["Presentation", "meta", "first"],
+        "date": "2021-05-23 10:00:00 +0200",
+        "url": "/2021/05/23/Blog-presentation.html"
       }
-  }
+    
+    ];
 </script>
+<script src="./js/lunr.js"></script>
+<script src="./js/search.js"></script>
     <script>
       //open external links in a new window
       function external_new_window() {
