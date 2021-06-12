@@ -2,7 +2,7 @@
 layout: post
 title: Easy to implement visual accessibility features.
 date: 2021-06-11 
-tags: Accesibility WIP
+tags: Accessibility WIP
 ---
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
@@ -29,7 +29,7 @@ But don’t worry, there is a way to help visually impaired people to enjoy our 
 
 >Accessibility in games is about getting players having experiences in games alongside their peers.
 
-A more technical definition from [The Web Accesibility Initiative](https://www.w3.org/WAI/), an initiative from the [World Wide Web Consortium](https://www.w3.org/), defines it as:
+A more technical definition from [The Web Accessibility Initiative](https://www.w3.org/WAI/), an initiative from the [World Wide Web Consortium](https://www.w3.org/), defines it as:
 
 > Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities can use them.
 
@@ -79,7 +79,7 @@ Where $u$ is ${R_{\mathrm {srgb} }}$, ${G_{\mathrm {srgb} }}$, or ${B_{\mathrm {
 
 **There must be an easier way...** Yes, there is the [WebAIM](https://webaim.org/resources/contrastchecker/) website, which calculates all of this automatically. It also gives you examples of how different text sizes would look with those colours. If you are working with web technologies, I recommend you to use the [Stark](https://www.getstark.co/) google chrome extension. It allows you to select text from a web and it will extract the colours and calculate everything for you. It also allows you to simulate vision problems on the entire website.
 
-Okay, so now we know how to calculate the contrast, but how much is enough contrast? The [Web Accesibility Initiative](https://www.w3.org/WAI/) stipulates how much is the minimum and the enhanced color contrast in their [reference document](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&col_overview#contrast-minimum). Consider that this was thought for web, but those numbers also should work fine for video games.
+Okay, so now we know how to calculate the contrast, but how much is enough contrast? The [Web Accessibility Initiative](https://www.w3.org/WAI/) stipulates how much is the minimum and the enhanced color contrast in their [reference document](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&col_overview#contrast-minimum). Consider that this was thought for web, but those numbers also should work fine for video games.
 
 |                 | AA (minimum) | AAA (enhanced) |
 |-----------------|:------------:|:--------------:|
@@ -124,17 +124,17 @@ I think now it is an adequate moment to make a call to [Matplotlib](https://matp
 
 The ultimate boss when it comes to colour blindness is achromatopsia. No hue at all. I have to admit that this one does not have an easy fix, but since we are here, it is worth it talking about it. The only way to overcome it is not relying on colour, we need alternative ways to give the user this information. If your game uses colour to show things like kinds of enemies or different types of ammo, you might think that this must be impossible. If there is a game called [Hue](https://www.curve-digital.com/en-us/games/detail/5/hue/) which did it, you can do it too. Another one is [Chroma Gun](https://pixel-maniacs.com/chromagun) that, you guessed it, is about colours. They just put icons on top of the colours.
 
-![Example of the accesibility features of Hue.]({{ media }}/hue_game.jpg)
+![Example of the accessibility features of Hue.]({{ media }}/hue_game.jpg)
 
-![Example of the accesibility features of Chroma Gun.]({{ media }}/chroma_gun.png)
+![Example of the accessibility features of Chroma Gun.]({{ media }}/chroma_gun.png)
 
 Besides the accessibility, making a game where the only difference is in the colour feels really cheap. For example, if your enemy has strengthened and now is stronger, do not change its colour from purple to red and call it a day. Add some spikes or fire to its design, make it interesting.
 
 ### Conclusion.
 
-If you have reached the end of the post I am sure that you are aware of the importance of accesibility in games. Allowing these people to enjoy our games is the least we can do for them, and, as shown in this post, we do not need to invest exhorbitants ammounts of money or hire a specialist. With something as simple as allowing for an alternative palette and making things bigger, we can make our game more playable.
+If you have reached the end of the post I am sure that you are aware of the importance of accessibility in games. Allowing these people to enjoy our games is the least we can do for them, and, as shown in this post, we do not need to invest exhorbitants ammounts of money or hire a specialist. With something as simple as allowing for an alternative palette and making things bigger, we can make our game more playable.
 
-Today we have talked about visual problems, but sadly there are way more. Maybe in the future I make a post about motor disabilities since custom peripherals are an interesting topic. I cannot finish this post without suggesting you the videos from [Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) youtube channel about [visual](https://www.youtube.com/watch?v=xrqdU4cZaLw), [cognitive](https://www.youtube.com/watch?v=ObhvacfIOg0), [motor](https://www.youtube.com/watch?v=Ufe0i26DGiA) and [auditory](https://www.youtube.com/watch?v=4NGe4dzlukc) disabilities. They are a must. Each video consists in 10 minutes full of useful recommendations with examples of actual games. Also, he makes a [yearly review of the state of the accesibility in games](https://www.youtube.com/watch?v=RWQcuBigOj0). 
+Today we have talked about visual problems, but sadly there are way more. Maybe in the future I make a post about motor disabilities since custom peripherals are an interesting topic. I cannot finish this post without suggesting you the videos from [Game Maker's Toolkit](https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw) youtube channel about [visual](https://www.youtube.com/watch?v=xrqdU4cZaLw), [cognitive](https://www.youtube.com/watch?v=ObhvacfIOg0), [motor](https://www.youtube.com/watch?v=Ufe0i26DGiA) and [auditory](https://www.youtube.com/watch?v=4NGe4dzlukc) disabilities. They are a must. Each video consists in 10 minutes full of useful recommendations with examples of actual games. Also, he makes a [yearly review of the state of the accessibility in games](https://www.youtube.com/watch?v=RWQcuBigOj0). 
 
 **Last-minute news**: In the last release of Minecraft, released the 8 of June 2021, Mojang has changed the classic ore textures. The reason is to make the game more accessible. Before all the ores had the same shape and just the colour changed, now the shape is different.
 
@@ -150,7 +150,7 @@ Finally, I leave you with some resources that I find interesting:
 
 - [Level Up – A Guide to Game UI (with Infographic)](https://www.toptal.com/designers/gui/game-ui): great explanation about the different kinds of game UI.
 
-- [Games for change student challenge: game accesibility resources](http://gamesforchange.org/studentchallenge/game-accessibility-resources/): this website has a ton of resources to make our games more accessible. A great place to start our research.
+- [Games for change student challenge: game accessibility resources](http://gamesforchange.org/studentchallenge/game-accessibility-resources/): this website has a ton of resources to make our games more accessible. A great place to start our research.
 
 - [Able Gamers Charity](https://ablegamers.org/): charity whose mission is making games more accessible.
 
