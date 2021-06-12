@@ -1,7 +1,7 @@
 import sys
 import markdown
 
-markdown_extensions = ['def_list','nl2br',"tables","admonition","codehilite", "fenced_code", "md_in_html", "attr_list", "plantuml_markdown"]
+markdown_extensions = ['markdown_captions', 'def_list','nl2br',"tables","admonition","codehilite", "fenced_code", "md_in_html", "attr_list", "plantuml_markdown"]
 
 extension_configs = {
     'codehilite': {

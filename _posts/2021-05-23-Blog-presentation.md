@@ -20,7 +20,6 @@ That was a bit of a rant, but it is also a statement. That's what I think about 
 I think that was enough for a first post, a lot of text. I will finish by sharing with you an artist whose pixel art I like due to the way she works with the shapes, most of the time making them pixel-perfect even in weird angles. Her name is [nostalgictree](https://www.instagram.com/nostalgictree/).
 
 
-![Pixel art by nostalgictree]({{ media }}/nostalgictree_art.jpg)
-*Pixel art by [nostalgictree](https://www.instagram.com/nostalgictree/).*
+![Pixel art by [nostalgictree](https://www.instagram.com/nostalgictree/).]({{ media }}/nostalgictree_art.jpg)
 
 **EDIT:** I decided to change a few things about how does the blog look. For the latest news check this blog post: [I am a sinner](2021-05-25-I-am-a-sinner.md). I have also crossed out two lines because they no longer made sense

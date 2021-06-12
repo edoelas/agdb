@@ -11,7 +11,6 @@ tags: Presentation meta design blog
 
 
 ![How did the blog look before the redesign.]({{media}}/old_blog.png)
-*How did the blog look before the redesign.*
 
 I have sinned. I said I wanted to keep this blog as minimal as possible. I bragged about the few lines I use. That I was just using 60 CSS lines. What have I done? Now I use around 200 lines of CSS. How many lines I will be using tomorrow? 1.000? 10.000? Nobody knows. I have become what I promised to destroy. I am a monster. I am the father of the bloat.
 
@@ -70,8 +69,7 @@ Now we are going to talk about colour. On lots of websites, I have seen backgrou
  Now I have 4 colours, `#fff`, `#eee`, `#333`, `#000`, each one with a specific purpose. That's all I need. It is still comfortable to read and the contrast is high enough that everybody can read it. The colour palette is quite straightforward: four colours, two for the background and two for the text.
 
 
-![Colours in order: #fff, #eee, #333, #000]({{ media }}/colours.png){.pixel}
-*Colours in order: #fff, #eee, #333, #000. First one invisible since it is the same colour as the background.*
+![Colours in order: #fff, #eee, #333, #000 . First one invisible since it is the same colour as the background.]({{ media }}/colours.png){.pixel}
 
 Another question to think about is which colour palette to use for the code highlight. I think that is something I will take care of in the future. So far I have just chosen the [Tango](http://jwarby.github.io/jekyll-pygments-themes/languages/python.html) theme from [Pygments](https://pygments.org/) but I will modify it soon since I have been told that some colours might not have enough contrast.
 

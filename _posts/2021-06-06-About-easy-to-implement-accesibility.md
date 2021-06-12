@@ -2,7 +2,7 @@
 layout: post
 title: Easy to implement visual impairment accessibility features asd a a a a
 date: 2021-06-11 
-tags: Accesibility WIP
+tags: Accesibility
 ---
 
 {% assign media = site.baseurl | append: "assets/media/" | append:  page.path | replace: ".md","" | replace: "_posts/",""  %}
@@ -43,7 +43,7 @@ This is probably the most important accesibility feature. The hability to scale 
 
 To continue the explanation it is needed to understand the different kinds of user interfaces in games. The most comon clasification is this one:
 
-![Diagram about the diferent kinds of game interfaces extracted from A sound idea: An investigation into accessible video game design for the deaf and hard of hearing]({{ media }}/kinds_of_interfaces.png)*Diagram about the diferent kinds of game interfaces extracted from [A sound idea: An investigation into accessible video game design for the deaf and hard of hearing](https://www.researchgate.net/publication/319174070_A_sound_idea_An_investigation_into_accessible_video_game_design_for_the_deaf_and_hard_of_hearing).*
+![Diagram about the diferent kinds of game interfaces extracted from [A sound idea: An investigation into accessible video game design for the deaf and hard of hearing](https://www.researchgate.net/publication/319174070_A_sound_idea_An_investigation_into_accessible_video_game_design_for_the_deaf_and_hard_of_hearing).]({{ media }}/kinds_of_interfaces.png)
 
 For the sake of this post we are just going to clasify them in two:
 
@@ -55,7 +55,7 @@ When making our game interface scalable we should allow to scale the diegetic an
 
 So far seems easy right? Believe me, you will have problems. Two elements will collide, the text will get outisde its box, some elements will look giant etc.
 
-![Wireframe sketch showing problems.]({{ media }}/sketch_problems.png)*Wireframe sketch with problems.*
+![Wireframe sketch showing problems.]({{ media }}/sketch_problems.png)
 
 Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means that the interface was not designed properly, and that, besides the accesibility, it will not look good in all screen sizes and resolutions. If you archive to make an implementation with these features you will have moved a big step towards good design and accesibility.
 
@@ -88,7 +88,7 @@ Okay, so now we know how to calculate the contrast, but how much is enough contr
 
 We should aim for the AAA. Here there are a few test that I have done. The background always is the same, but the content changes to archive the desired contrast ratio.
 
-![Test showing multiple contrast ratios.]({{ media }}/contrast_test.png)*Test showing multiple contrast ratios.*
+![Test showing multiple contrast ratios.]({{ media }}/contrast_test.png)
 
 That does not mean that we have to create a palette where every color has a contrast ratio of 7:1 with all the other colours. We have to think about how are we going to use the colours and just worry about the contrast between elements that give information and its background. Quoting the Web Accesibility Initiative about incidental text:
 
@@ -96,14 +96,14 @@ That does not mean that we have to create a palette where every color has a cont
 
 That means that we should not worry about the colours whose only purpose is to be used for decorations. But be careful, elements different from text that show information also deserve high contrast, for example, the lines that organize our UI. Here is an example:
 
-![Example showing where to use high contrast colours. The second column has an achromatopsia filter.]({{ media }}/ui_test.png)*Example showing where to use high contrast colours. The second column has an achromatopsia filter.* 
+![Example showing where to use high contrast colours. The second column has an achromatopsia filter.]({{ media }}/ui_test.png)
 
 Just one color, used in the vertical separators, has changed. In the first example we see how the shadows are lost, but all the important information still is there. On the second example the vertical separators disapear. This information is not trivial, so we should avoid designs like this one. Also, it looks like crap.
 
 As I said, a high contrast palette might not be enough. This is specially true when colours are meaningful, for example, colours of teams. In these kinds of situations is hard to design with high contrast. What if there are 5, or even more, teams? Should each one have a different luminance?  Thankfully these situations are not a problem for people with low vision problems. As far as there is enough contrast between the players and the background they will be able to see properly the shapes. But what for colour blind people? Let's see an example:
 
 
-![Example showing two teams, green and red, over brown background. The second image has a deuteronopia filter.]({{ media }}/teams_test2.png)*Example showing two teams, green and red, over brown background. The second image has a deuteronopia filter.*
+![Example showing two teams, green and red, over brown background. The second image has a deuteronopia filter.]({{ media }}/teams_test2.png)
 
 The image has gone through a deuteronopia filter. If you have deuteronopia you will have a hard time playing this game. Deuteronopia is one kind of colour blindness, there are more. But what is colour blindness? The [American Academy of Ophtamology](https://www.aao.org/eye-health/diseases/what-is-color-blindness) explains it in their website:
 
@@ -111,23 +111,23 @@ The image has gone through a deuteronopia filter. If you have deuteronopia you w
 
 In our retina we have rods and cones. Rods detect light intensity and cones colour. We have three different types of cones, each type detect one colour: red, green and blue. The combination of the signal detected by the cones is transformed in the [hue](https://en.wikipedia.org/wiki/Hue) we perceive. It is not a coincidence that we use the RGB model. Deuteranopia, the problem simulated in the image, has to do with the green cones, they do not work properly.
 
-![Image showing simulations of the different problems related to colour perception.]({{ media }}/color_blind_types.png)*Image showing simulations of the different problems related to colour perception.*
+![Image showing simulations of the different problems related to colour perception.]({{ media }}/color_blind_types.png)
 
 Around 4.5% of the population has some kind of colour blindness. Just in case you did not noticed it, 4.5% is a ton of people. The most common of the colour related problems is Deuteranopia (problems with green cones), which results in a similar perceived colour palette to the second most common problem, protanopia (problem with red cones). These two probles usally are refered together as red-green colour blindness. Then there is Tritanotopia, which is really rare (around 1 every 10.000 people) and has to do with the blue cones. The last one is Achromatopsia, where your cones are not working at all and you see the life in shades of gray. Thankfully this one is ultra rare, afecting 1 person every 33.000.
 
 At this point I think you already know how to make it easier for colour blind people to play our games. You are right, with an alternative colour palette. But which one? Don't worry, there are already made accesible palettes. My recomendations are The [Okabe-Ito](https://jfly.uni-koeln.de/color/#checker) or [Tol](https://personal.sron.nl/~pault/#sec:qualitative)'s palette. Both of them work really well, are widly supported and were created based on scientific evidence. As a curious fact I will say that the Okabe-Ito palette is the one used in the book [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html) published by [o'reilly](https://www.oreilly.com/). Okabe-Ito's palette is composed of 8 colours while Tol suggest diferent palettes so we can choose the right one for our application. If you have to pick one I would suggest you to visit their posts with a tool to simulate the colour vision deficiencies (I recomend Spark) and judge by yourself. Personally I prefer the Okabe-Ito one.
 
-![The palette proposed by Masataka Okabe and Kei Ito: #E60F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000 .]({{ media }}/okabe-ito.png)*The palette proposed by Masataka Okabe and Kei Ito: #E60F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000 .*
+![The palette proposed by Masataka Okabe and Kei Ito: #E60F00, #56B4E9, #009E73, #F0E442, #0072B2, #D55E00, #CC79A7, #000000 .]({{ media }}/okabe-ito.png)
 
-![One palette proposed by Paul Tol: #4477AA, #66CCEE, #228833, #CCBB44, #EE6677, #AA3377, #BBBBBB .]({{ media }}/tol.png)*One of the palettes proposed by Paul Tol: #4477AA, #66CCEE, #228833, #CCBB44, #EE6677, #AA3377, #BBBBBB .*
+![One palette proposed by Paul Tol: #4477AA, #66CCEE, #228833, #CCBB44, #EE6677, #AA3377, #BBBBBB .]({{ media }}/tol.png)
 
 I think now it is an adequate moment to make a call to [Matplotlib](https://matplotlib.org/) to change its default colour palette.
 
 The final boss when it comes to color blindness is Achromatopsia. No hue at all. I have to admit that this one does not have an easy fix as changing the colour palette, but since we are here it is worthit talking about it. The only way to do it is not relying in colour, we need alternative ways to give the user this information. If your game uses colour to indicate things like kinds of enemies or different kinds of ammo you might think that this must be imposible. If there is a game called [Hue](https://www.curve-digital.com/en-us/games/detail/5/hue/) which managed to do it you can do it too. Another one [is Chroma Gun](https://pixel-maniacs.com/chromagun) that, you guessed it, is about colours. They just put icons on top of the colours.
 
-![Example of the accesibility features of Hue.]({{ media }}/hue_game.jpg)*Example of the accesibility features of Hue.*
+![Example of the accesibility features of Hue.]({{ media }}/hue_game.jpg)
 
-![Example of the accesibility features of Chroma Gun.]({{ media }}/chroma_gun.png)*Example of the accesibility features of Chroma Gun.*
+![Example of the accesibility features of Chroma Gun.]({{ media }}/chroma_gun.png)
 
 Besides the accesibility, making a game where the only difference is in the colour feels really cheap. For example, if your enemy has evolved and now is stronger do not change it's colour from purple to red and call it a day. Add some spikes or fire to it's design, make it interesting.
 
@@ -139,7 +139,7 @@ Today we have talked about visual problems, but saddly there are way more. Maybe
 
 **Last minute news**: In the last release of Minecraft, released the 8 of June 2021, Mojang has decided to change the classic ore textures. The reason is to make the game more accesible. Before all the ores had the same shape and just the colour changed, now the shape is different.
 
-![Changes of the textures of Minecraft's ores. Image obtained from [Isk Mogul](https://www.iskmogul.com/minecraft-is-adding-new-ore-textures-for-a-very-good-reason/).]({{ media }}/minecraft.jpg)*Changes of the textures of Minecraft's ores. Image obtained from [Isk Mogul](https://www.iskmogul.com/minecraft-is-adding-new-ore-textures-for-a-very-good-reason/).*
+![Changes of the textures of Minecraft's ores. Image obtained from [Isk Mogul](https://www.iskmogul.com/minecraft-is-adding-new-ore-textures-for-a-very-good-reason/).]({{ media }}/minecraft.jpg)
 
 
 Finally, I leave you with some resources that I find interesting:

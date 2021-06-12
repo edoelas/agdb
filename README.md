@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Adapt design for smartphones
 - Solve hassle with image insertion: https://jekyllrb.com/docs/plugins/tags/
 
 ```
@@ -11,3 +10,8 @@ jekyll build
 jgd
 
 ```
+
+## Dependencies
+
+- Python markdown 
+- markdown-captions
