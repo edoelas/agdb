@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy to implement visual impairment accessibility features
+title: Easy to implement visual impairment accessibility features asd a a a a
 date: 2021-06-11 
 tags: Accesibility WIP
 ---
