@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Easy to implement visual accessibility features.
+title: Easy to implement visual accessibility features
 date: 2021-06-11 
 tags: Accessibility WIP
 ---
@@ -37,7 +37,7 @@ I think you get the idea. So the question now is: How do I make my game accessib
 
 In this post my goal is to cover two topics that will make our game way more accessible for the visually impaired people and that are really easy to implement: scaling and colour. The key word is easy. Low effort, big gains.
 
-### GUI scaling.
+### GUI scaling
 
 TThis is probably the most important accessibility feature. The ability to scale the GUI (Graphical User Interface) makes it easier for the people with [low vision](https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/low-vision).  It is based on a really complex principle: the bigger the easier to see. Seems easy, right? You just need to make everything bigger and that’s all. If you have designed interfaces for games before, I am sure you know that what seems easy on the surface ends up being not so much. This post is not about GUI design but I will leave you at the end some interesting posts about the importance of this topic since we usually overlook it.
 
@@ -59,7 +59,7 @@ So far seems simple, right? Believe me, you will have problems. Two elements wil
 
 Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the image properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make an implementation with these features, you will have moved a big step towards good design and accessibility.
 
-### Colours.
+### Colours
 
 Sometimes making things bigger is not enough. Some people will have problems if the contrast between the text and the background is too low. To solve this problem, the recommendation is to provide at least two palettes: one of your choice and another one with high contrast. A high contrast palette will help both, people with low vision and with colour blindness. But sometimes this might not be enough. We will start talking about high contrast.
 
@@ -130,7 +130,7 @@ The ultimate boss when it comes to colour blindness is achromatopsia. No hue at 
 
 Besides the accessibility, making a game where the only difference is in the colour feels really cheap. For example, if your enemy has strengthened and now is stronger, do not change its colour from purple to red and call it a day. Add some spikes or fire to its design, make it interesting.
 
-### Conclusion.
+### Conclusion
 
 If you have reached the end of the post I am sure that you are aware of the importance of accessibility in games. Allowing these people to enjoy our games is the least we can do for them, and, as shown in this post, we do not need to invest exhorbitants ammounts of money or hire a specialist. With something as simple as allowing for an alternative palette and making things bigger, we can make our game more playable.
 
