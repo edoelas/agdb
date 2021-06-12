@@ -5,7 +5,18 @@ import os
 
 from md_extensions.test import AdmonitionExtension
 
-markdown_extensions = ['md_extensions.test:AdmonitionExtension', 'def_list','nl2br',"tables","codehilite", "fenced_code", "md_in_html", "attr_list", "plantuml_markdown"]
+markdown_extensions = [
+    'markdown_captions',
+    'md_extensions.test:AdmonitionExtension',
+    'def_list',
+    'nl2br',
+    "tables",
+    "codehilite",
+    "fenced_code",
+    "md_in_html",
+    "attr_list",
+    "plantuml_markdown"
+]
 
 extension_configs = {
     'codehilite': {
