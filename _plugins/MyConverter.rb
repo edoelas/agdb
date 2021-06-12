@@ -16,11 +16,11 @@ class Jekyll::Converters::Markdown::CustomProcessor
 
       puts "EXECUTED"
 
-      md_path = "./_plugins/temp.md"
-      html_path = "./_plugins/temp.html"
+      md_path = "./_plugins/temp/temp.md"
+      html_path = "./_plugins/temp/temp.html"
       
       File.write(md_path, content, mode: "w")
-      system("python ./_plugins/test.py")
+      system("python ./_plugins/MyConverter.py")
 
       content = File.read(html_path)
       content
