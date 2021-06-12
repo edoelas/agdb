@@ -9,9 +9,9 @@ body{
   color: var(--text);
   font-family: 'Roboto', sans-serif;
   background-color: var(--background);
-  padding: 0px;
+  padding: 0px 20px;
   margin: 40px auto;
-  max-width: 650px;
+  max-width: 700px;
 
   font-size: 1em;
   font-weight: 400;
