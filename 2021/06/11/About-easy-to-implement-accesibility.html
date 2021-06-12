@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Easy to implement visual accessibility features.</title> 
+    <title>Easy to implement visual accessibility features</title> 
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-91WYMZK8X7"></script>
@@ -39,7 +39,7 @@
       <a class="dontprint" href="/agdb/">Home</a>
 <article>
   <header>
-    <h2>Easy to implement visual accessibility features.</h2>
+    <h2>Easy to implement visual accessibility features</h2>
     <h5>11 June 2021</h5>
   </header>
   <div class="admonition attention">
@@ -101,7 +101,7 @@
 </blockquote>
 <p>I think you get the idea. So the question now is: How do I make my game accessible? That question is tricky because it is really complicated to make a game 100% accessible for everybody. The conditions of our players can vary a lot and covering all of them can be a huge challenge. We, as indie developers, might not have the resources or experience of AAA game companies, but that’s not an excuse to not to provide some basic accessibility features. In fact, indie games sometimes are the best ones at this, some examples being <a href="http://hyperdotgame.com/">Hyperdot</a>, <a href="https://store.steampowered.com/app/431940/Wildfire/">Wildfire</a> or <a href="https://store.steampowered.com/app/1060600/Lair_of_the_Clockwork_God/">Lair of the Clockwork God</a>, all of them with great accessibility features.</p>
 <p>In this post my goal is to cover two topics that will make our game way more accessible for the visually impaired people and that are really easy to implement: scaling and colour. The key word is easy. Low effort, big gains.</p>
-<h3>GUI scaling.</h3>
+<h3>GUI scaling</h3>
 <p>TThis is probably the most important accessibility feature. The ability to scale the GUI (Graphical User Interface) makes it easier for the people with <a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/low-vision">low vision</a>.  It is based on a really complex principle: the bigger the easier to see. Seems easy, right? You just need to make everything bigger and that’s all. If you have designed interfaces for games before, I am sure you know that what seems easy on the surface ends up being not so much. This post is not about GUI design but I will leave you at the end some interesting posts about the importance of this topic since we usually overlook it.</p>
 <p>To continue the explanation, we need to understand the different user interfaces in games. The most common classification is this one:</p>
 <p><img alt="Diagram about the diferent kinds of game interfaces extracted from A sound idea: An investigation into accessible video game design for the deaf and hard of hearing." src="/agdb/assets/media/2021-06-06-About-easy-to-implement-accesibility/kinds_of_interfaces.png" /></p>
@@ -118,7 +118,7 @@
 <p>So far seems simple, right? Believe me, you will have problems. Two elements will collide, the text will get outside its box, some elements will look giant, etc.</p>
 <p><img alt="Wireframe sketch showing problems." src="/agdb/assets/media/2021-06-06-About-easy-to-implement-accesibility/sketch_problems.png" /></p>
 <p>Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the image properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make an implementation with these features, you will have moved a big step towards good design and accessibility.</p>
-<h3>Colours.</h3>
+<h3>Colours</h3>
 <p>Sometimes making things bigger is not enough. Some people will have problems if the contrast between the text and the background is too low. To solve this problem, the recommendation is to provide at least two palettes: one of your choice and another one with high contrast. A high contrast palette will help both, people with low vision and with colour blindness. But sometimes this might not be enough. We will start talking about high contrast.</p>
 <p>How much contrast is enough? That is an easy one, 7:1 contrast ratio is enough for most use cases. Let me explain. Any colour (inside a colour space) has what we call <a href="https://en.wikipedia.org/wiki/Relative_luminance">relative luminance</a>. Having the relative luminance of two colours, we can calculate the contrast ratio with this formula:</p>
 <p>$$ CR = \frac{L1 + 0.05}{L2 + 0.05} $$</p>
@@ -176,7 +176,7 @@
 <p><img alt="Example of the accessibility features of Hue." src="/agdb/assets/media/2021-06-06-About-easy-to-implement-accesibility/hue_game.jpg" /></p>
 <p><img alt="Example of the accessibility features of Chroma Gun." src="/agdb/assets/media/2021-06-06-About-easy-to-implement-accesibility/chroma_gun.png" /></p>
 <p>Besides the accessibility, making a game where the only difference is in the colour feels really cheap. For example, if your enemy has strengthened and now is stronger, do not change its colour from purple to red and call it a day. Add some spikes or fire to its design, make it interesting.</p>
-<h3>Conclusion.</h3>
+<h3>Conclusion</h3>
 <p>If you have reached the end of the post I am sure that you are aware of the importance of accessibility in games. Allowing these people to enjoy our games is the least we can do for them, and, as shown in this post, we do not need to invest exhorbitants ammounts of money or hire a specialist. With something as simple as allowing for an alternative palette and making things bigger, we can make our game more playable.</p>
 <p>Today we have talked about visual problems, but sadly there are way more. Maybe in the future I make a post about motor disabilities since custom peripherals are an interesting topic. I cannot finish this post without suggesting you the videos from <a href="https://www.youtube.com/channel/UCqJ-Xo29CKyLTjn6z2XwYAw">Game Maker's Toolkit</a> youtube channel about <a href="https://www.youtube.com/watch?v=xrqdU4cZaLw">visual</a>, <a href="https://www.youtube.com/watch?v=ObhvacfIOg0">cognitive</a>, <a href="https://www.youtube.com/watch?v=Ufe0i26DGiA">motor</a> and <a href="https://www.youtube.com/watch?v=4NGe4dzlukc">auditory</a> disabilities. They are a must. Each video consists in 10 minutes full of useful recommendations with examples of actual games. Also, he makes a <a href="https://www.youtube.com/watch?v=RWQcuBigOj0">yearly review of the state of the accessibility in games</a>. </p>
 <p><strong>Last-minute news</strong>: In the last release of Minecraft, released the 8 of June 2021, Mojang has changed the classic ore textures. The reason is to make the game more accessible. Before all the ores had the same shape and just the colour changed, now the shape is different.</p>
