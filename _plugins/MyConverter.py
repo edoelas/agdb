@@ -15,7 +15,8 @@ markdown_extensions = [
     "fenced_code",
     "md_in_html",
     "attr_list",
-    "plantuml_markdown"
+    'plantuml_markdown',
+    'smarty'
 ]
 
 extension_configs = {
