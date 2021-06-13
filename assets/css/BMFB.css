@@ -263,7 +263,7 @@ input:focus{
 
 ::-webkit-scrollbar-track:horizontal{
   background-color: var(--background-alt);
-  /*border: 1px solid var(--text-alt);*/
+  border: 1px solid var(--text-alt);
 }
 
 ::-webkit-scrollbar-track:vertical{
