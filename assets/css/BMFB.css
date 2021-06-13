@@ -241,6 +241,33 @@ input:focus{
 
 
 
+/* SCROLLBAR */
+/* always show on android: https://stackoverflow.com/questions/22907777/make-scrollbar-visible-in-mobile-browsers*/
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  
+  margin-top: 10px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: var(--text-alt)
+}
+
+::-webkit-scrollbar-track {
+  border-radius:6px;
+  background-color: var(--background-alt);
+  border: 1px solid var(--text-alt);
+}
+
+
+
+
 /* OTHER */
 
 hr{
@@ -259,4 +286,5 @@ pre {
 .MathJax_Display{
   overflow-x: auto;
   overflow-y: clip;
+  padding-bottom: 5px;
 }
