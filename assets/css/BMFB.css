@@ -249,7 +249,7 @@ input:focus{
 
 ::-webkit-scrollbar:horizontal {
   margin-top: 10px;
-  height: 6px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar:vertical {
