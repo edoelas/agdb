@@ -20,6 +20,8 @@ body{
 
 }
 
+/* TEXT */ 
+
 /* La indentacion afecta tambien al texto de las imagenes 
 article > p{
   text-indent: 1.5em;
@@ -85,32 +87,11 @@ h6{ /*Level 2 subtitle*/
 }
 
 a{color: var(--text);}
+
 a:hover, a:active {
   text-decoration: none;
 }
 
-input{
-  border-width: 0px 0px 1px 0px;
-  border-color: var(--text);
-  background-color: var(--background);
-  color: var(--text-alt);
-  outline: none;
-  width: 30%;
-  transition: width 0.2s;
-}
-
-::placeholder{
-  color: var(--text);
-}
-
-input:focus{
-  width: 100%;
-}
-
-
-@media print {
-  .dontprint{ display: none; }
-}
 
 
 /*  CODE HIGHLIGHT  */
@@ -144,7 +125,9 @@ code{
 }
 
 
+
 /* IMAGES */
+
 img {
   display: block;
   margin-left: auto;
@@ -175,6 +158,11 @@ figcaption {
   image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
   -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
+
+
+
+/*  QUOTES  */
+
 blockquote{
   color: var(--text-alt);
   font-size: 1.2em;
@@ -182,31 +170,38 @@ blockquote{
   line-height: 1.6em;
 }
 
+
+
+/*  TABLES  */
+
 table{
-  margin: auto;
+  margin: 0 auto;
   border-collapse: collapse;
+  
+  display: block;
+  overflow-x: auto;
+
+  max-width: fit-content;
+  white-space: nowrap;
 }
+
 td, th{
   padding: 3px 10px;
 }
+
 th {
     border-bottom-style: solid;
     border-width: 1px;
 }
 
 
-hr{
-  border-width: 0px 0px 1px 0px;
-  border-color: var(--text-alt);
-}
 
-pre {
-  white-space: pre-wrap;
-}
+/*  ADMONITIONS  */
 
 .attention.admonition{
   background-color: rgb(255, 190, 190);
 }
+
 .attention .admonition-title {
   background-color: rgb(187, 34, 34);
 }
@@ -220,4 +215,48 @@ pre {
   color: white;
   margin: -5px 0px -5px -20px;
   padding: 5px 0px 5px 20px;
+}
+
+
+
+/* SEARCH BAR */
+
+input{
+  border-width: 0px 0px 1px 0px;
+  border-color: var(--text);
+  background-color: var(--background);
+  color: var(--text-alt);
+  outline: none;
+  width: 30%;
+  transition: width 0.2s;
+}
+
+::placeholder{
+  color: var(--text);
+}
+
+input:focus{
+  width: 100%;
+}
+
+
+
+/* OTHER */
+
+hr{
+  border-width: 0px 0px 1px 0px;
+  border-color: var(--text-alt);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+@media print {
+  .dontprint{ display: none; }
+}
+
+.MathJax_Display{
+  overflow-x: auto;
+  overflow-y: clip;
 }
