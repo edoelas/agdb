@@ -249,20 +249,22 @@ input:focus{
 }
 
 ::-webkit-scrollbar:horizontal {
-  
   margin-top: 10px;
   height: 6px;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+::-webkit-scrollbar:vertical {
+  margin-top: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
   background-color: var(--text-alt)
 }
 
-::-webkit-scrollbar-track {
-  border-radius:6px;
+::-webkit-scrollbar-track{
   background-color: var(--background-alt);
-  border: 1px solid var(--text-alt);
+  /*border: 1px solid var(--text-alt);*/
 }
 
 
