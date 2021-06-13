@@ -182,7 +182,6 @@ table{
   overflow-x: auto;
 
   max-width: fit-content;
-  white-space: nowrap;
 }
 
 td, th{
