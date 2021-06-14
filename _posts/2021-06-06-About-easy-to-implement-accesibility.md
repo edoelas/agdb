@@ -75,7 +75,7 @@ $$ {\displaystyle \gamma ^{-1}(u)={\begin{cases}{\frac {u}{12.92}}&={\frac {25u}
 
 Where $u$ is ${R}$, ${G}$, or ${B}$.
 
-**There must be an easier way...** Yes, there is the [WebAIM](https://webaim.org/resources/contrastchecker/) website, which calculates all of this automatically. It also gives you examples of how different text sizes would look with those colours. If you are working with web technologies, I recommend you to use the [Stark](https://www.getstark.co/) google chrome extension, which allows you to select text from any web and it will extract the colours and calculate everything. It can simulate vision problems on the entire website.
+**There must be an easier way...** Yes, there is the [WebAIM](https://webaim.org/resources/contrastchecker/) website, which calculates all of this automatically. It also gives you examples of how different text sizes would look with those colours. If you are working with web technologies, I recommend you to use the [Stark](https://www.getstark.co/) google chrome extension, which allows you to select text from any web and it will extract the colours and calculate everything. It can simulate vision problems on the entire website too.
 
 Okay, so now we know how to calculate the contrast, but how much is enough contrast? The [Web Accessibility Initiative](https://www.w3.org/WAI/) stipulates how much is the minimum and the enhanced color contrast in their [reference document](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&col_overview#contrast-minimum). Consider that this was thought for web, but those numbers should work fine for video games.
 

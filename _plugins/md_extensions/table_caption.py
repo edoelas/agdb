@@ -106,7 +106,6 @@ class TableProcessor(BlockProcessor):
                 if self.RE_CODE_PIPES.search(row) is not None:
                     self._build_row(row.strip(' '), tbody, align)
                 elif self.RE_CAPTION.search(row) is not None:
-                    print(rows[-1])
                     caption.text = self.RE_CAPTION.search(rows[-1]).group(1)
 
 
