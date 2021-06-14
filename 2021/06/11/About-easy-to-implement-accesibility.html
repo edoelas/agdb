@@ -118,7 +118,7 @@
 <figure><img src="/agdb/assets/media/2021-06-06-About-easy-to-implement-accesibility/sketch_problems.png" /><figcaption>Wireframe sketch showing problems.</figcaption>
 </figure>
 </p>
-<p>Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the interface properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make an implementation with these features in mind, you will have moved a big step towards good design and accessibility.</p>
+<p>Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the interface properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make a good implementation, you will have moved a big step towards good design and accessibility.</p>
 <h3>Colours</h3>
 <p>Sometimes making things bigger is not enough. Some people will have problems if the contrast between the text and the background is too low. To solve this problem, the recommendation is to provide at least two palettes: one of your choice and another one with high contrast. A high contrast palette will help both, people with low vision and with colour blindness. But sometimes this might not be enough. We will start by talking about high contrast.</p>
 <p>How much contrast is enough? That is an easy one, 7:1 contrast ratio is enough for most use cases. Let me explain. Any colour (inside a colour space) has what we call <a href="https://en.wikipedia.org/wiki/Relative_luminance">relative luminance</a>. Having the relative luminance of two colours, we can calculate the contrast ratio with this formula:</p>
@@ -130,7 +130,7 @@
 <p>Where $u$ is ${R}$, ${G}$, or ${B}$.</p>
 <p><strong>There must be an easier way&hellip;</strong> Yes, there is the <a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> website, which calculates all of this automatically. It also gives you examples of how different text sizes would look with those colours. If you are working with web technologies, I recommend you to use the <a href="https://www.getstark.co/">Stark</a> google chrome extension, which allows you to select text from any web and it will extract the colours and calculate everything. It can simulate vision problems on the entire website.</p>
 <p>Okay, so now we know how to calculate the contrast, but how much is enough contrast? The <a href="https://www.w3.org/WAI/">Web Accessibility Initiative</a> stipulates how much is the minimum and the enhanced color contrast in their <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0&amp;col_overview#contrast-minimum">reference document</a>. Consider that this was thought for web, but those numbers should work fine for video games.</p>
-<table><caption>Sugested contrast by the WCAG</caption><thead>
+<table><caption>Sugested contrast by the WCAG.</caption><thead>
 <tr>
 <th></th>
 <th align="center">AA (minimum)</th>
