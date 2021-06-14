@@ -2,19 +2,17 @@ import sys
 import markdown
 import os 
 
-
-from md_extensions.test import AdmonitionExtension
+from md_extensions.table_caption import TableCaptionExtension
 
 markdown_extensions = [
+    'md_extensions.table_caption:TableCaptionExtension',
     'markdown_captions',
-    'md_extensions.test:AdmonitionExtension',
     'def_list',
     'nl2br',
-    "tables",
-    "codehilite",
-    "fenced_code",
-    "md_in_html",
-    "attr_list",
+    'codehilite',
+    'fenced_code',
+    'md_in_html',
+    'attr_list',
     'plantuml_markdown',
     'smarty'
 ]

@@ -13,12 +13,13 @@ This is an empathy exercise about what people with visual impairment feel with l
 
 The report about [global data on visual impairments 2010](https://www.who.int/blindness/GLOBALDATAFINALforweb.pdf) made by the WHO tells us how many people have moderate or severe vision impairment:
 
-| Ages (years) | Population (millions) | Blind (millions) | Low Vision (millions) | Visually Impaired (millions) |
+| Ages (years)    | Population (millions) | Blind (millions) | Low Vision (millions) | Visually Impaired (millions) |
 |:---------------:|:---------------------:|:----------------:|:---------------------:|:----------------------------:|
 | 0-14            | 1,848.50              | 1.421            | 17.518                | 18.939                       |
 | 15-49           | 3548.2                | 5.784            | 74.463                | 80.248                       |
 | 50-inf          | 1,340.80              | 32.16            | 154.043               | 186.203                      |
 | **all ages**    | **6,737.50**          | **39.365**       | **246.024**           | **285.389**                  |
+![Global estimate of the number of people visually impaired by age, 2010.]
 
 That means that 4.24% of the global population is visually impaired (0.58% blind and 3.65% low vision). Although this data does not consider the colour blindness, it should give us a rough idea of how many people will experience visual difficulties when playing our games.
 
@@ -82,6 +83,7 @@ Okay, so now we know how to calculate the contrast, but how much is enough contr
 |-----------------|:------------:|:--------------:|
 | **Normal text** | 4.5:1        | 7:1            |
 | **Large text**  | 3:1          | 4.5:1          |
+![Sugested contrast by the WCAG]
 
 We have to aim for the AAA. Here there are a few tests that I have done. The background always is the same, but the content changes to archive the desired contrast ratio.
 
