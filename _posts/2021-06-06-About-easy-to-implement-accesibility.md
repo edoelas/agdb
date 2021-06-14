@@ -103,11 +103,11 @@ A high contrast palette might not be enough. This is specially true when colours
 
 ![Example showing two teams, green and red, over brown background. The second image has a deuteranopia filter.]({{ media }}/teams_test2.png)
 
-The image has gone through a deuteranopia filter. If you have this problem, you will have a hard time playing this game. Deuteranopia is one kind of colour blindness, there are more. But what is colour blindness? The [American Academy of Ophtamology](https://www.aao.org/eye-health/diseases/what-is-color-blindness) explains it in their website:
+The image has gone through a deuteranopia filter. If you have this problem, you would have a hard time playing this game. Deuteranopia is one kind of colour blindness, there are more. But what is colour blindness? The [American Academy of Ophtamology](https://www.aao.org/eye-health/diseases/what-is-color-blindness) explains it in their website:
 
 > Color blindness occurs when you are unable to see colors in a normal way. [...] Color blindness can happen when one or more of the color cone cells are absent, not working, or detect a different color than normal.
 
-In our retina we have rods and cones. Rods detect light intensity and cones colour. We have three different types of cones, each one detects one colour: red, green and blue. It is not a coincidence that we use the RGB model. Then, those colours merge in the [hue](https://en.wikipedia.org/wiki/Hue) we perceive. Deuteranopia, the problem simulated in the image, has to do with the green cones, they do not work properly.
+In our retina we have rods and cones. Rods detect light intensity and cones colour. We have three different types of cones, each one detects one colour: red, green and blue (it is not a coincidence that we use the RGB model). Then, those colours merge in the [hue](https://en.wikipedia.org/wiki/Hue) we perceive. Deuteranopia, the problem simulated in the image, has to do with the green cones, they do not work properly.
 
 ![Image showing simulations of the different problems related to colour perception.]({{ media }}/color_blind_types.png)
 
