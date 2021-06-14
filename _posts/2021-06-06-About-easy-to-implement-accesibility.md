@@ -55,7 +55,7 @@ So far seems simple, right? Believe me, you will have problems. Two elements wil
 
 ![Wireframe sketch showing problems.]({{ media }}/sketch_problems.png)
 
-Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the interface properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make an implementation with these features in mind, you will have moved a big step towards good design and accessibility.
+Is a good idea to start the development of the interface with these features in mind. Having the problems shown in the image means the developer did not implement the interface properly, and that, besides the accessibility, it will not look good in all screen sizes and resolutions. If you make a good implementation, you will have moved a big step towards good design and accessibility.
 
 ### Colours
 
@@ -83,7 +83,7 @@ Okay, so now we know how to calculate the contrast, but how much is enough contr
 |-----------------|:------------:|:--------------:|
 | **Normal text** | 4.5:1        | 7:1            |
 | **Large text**  | 3:1          | 4.5:1          |
-![Sugested contrast by the WCAG]
+![Sugested contrast by the WCAG.]
 
 We have to aim for the AAA. Here there are a few tests that I have done. The background always is the same, but the content changes to archive the desired contrast ratio.
 
